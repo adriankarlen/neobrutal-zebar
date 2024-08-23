@@ -52,6 +52,7 @@ with that string.
 ```
 
 #### 2. styles/global.css 
+
 ```css
 /* Change the following imports, you don't need to url encode these like in config.yaml */
 @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/themes/rose-pine.css";
@@ -70,6 +71,30 @@ In `styles/config.css` there exists a lot of configuration available to tweak.
 ## 🎨 Themes
 
 At the moment the only theme available is [Rosé Pine](https://rosepinetheme.com/) but I plan to add more themes, or if you have a theme you want to add, don't hesitate to contribute.
+
+###  Recipies
+
+<details>
+<summary>Soft Brutal</summary>
+
+```css
+--radius: 9999px;
+```
+
+<img src="https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/brutal-soft.png" />
+</details>
+<details>
+<summary>Round bars without shadow</summary>
+
+```css
+--border-size: 1px;
+--radius: 9999px;
+--shadow-size-bar: 0px;
+--shadow-size-button: 0px;
+```
+
+<img src="https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/non-brutal.png" />
+</details>
 
 ## 📜 License
 
