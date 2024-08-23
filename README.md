@@ -11,7 +11,8 @@
 ![image](https://github.com/adriankarlen/neobrutal-zebar/blob/15014ee3b4f8fdd22d8ab7d173c7d80fc6853ae0/misc/fullscreen.png)
 ### Workspaces
 
-https://github.com/adriankarlen/neobrutal-zebar/blob/7ca1fc060ffa11d2d924452423adf65e51c3c5d2/misc/workspaces.mp4
+https://github.com/user-attachments/assets/d1e1ce3f-37bd-4ee7-8942-611992039014
+
 ### System info
 
-https://github.com/adriankarlen/neobrutal-zebar/blob/7ca1fc060ffa11d2d924452423adf65e51c3c5d2/misc/system-info.mp4
+https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
