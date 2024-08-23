@@ -72,7 +72,7 @@ In `styles/config.css` there exists a lot of configuration available to tweak.
 
 At the moment the only theme available is [Rosé Pine](https://rosepinetheme.com/) but I plan to add more themes, or if you have a theme you want to add, don't hesitate to contribute.
 
-###  Recipies
+## 🍳 Recipies
 
 <details>
 <summary>Soft Brutal</summary>
