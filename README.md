@@ -1,7 +1,7 @@
 # Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
 
 > NOTE: This configuration is it's early development. Contributions are
-> welcome, especially to the process icon map, as I only mapped the ones, I use
+> welcome, especially to the process icon map, as I only mapped the ones I use
 > that could not be automapped.
 
 ## 🔥Showcase
