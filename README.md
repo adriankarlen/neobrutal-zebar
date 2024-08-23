@@ -4,7 +4,7 @@
 > welcome, especially to the process icon map, as I only mapped the ones I use
 > that could not be automapped.
 
-## 🔥Showcase
+## 🖼️ Showcase
 
 ### Fullscreen
 
@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/d1e1ce3f-37bd-4ee7-8942-611992039014
 
 https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 
-## 🛠️ Configuration
+## ⚙️ Configuration
 
 ### Getting the config in place
 
@@ -59,11 +59,11 @@ with that string.
 
 In `styles/config.css` there exists a lot of configuration available to tweak.
 
-## 🖌️ Themes
+## 🎨 Themes
 
 At the moment the only theme available is [Rosé Pine](https://rosepinetheme.com/) but I plan to add more themes, or if you have a theme you want to add, don't hesitate to contribute.
 
-## 📃 License
+## 📜 License
 
 This project is licensed under the MIT License - see the
 [LICENSE](https://github.com/adriankarlen/neobrutal-zebar/blob/main/LICENSE) file
