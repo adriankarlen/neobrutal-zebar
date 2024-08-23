@@ -29,6 +29,19 @@ In order for imports to work you will need to update some paths in the files
 
 #### 1. config.yaml
 
+In order for zebar to able to import the css file, you need to url encode all
+special characters, some helpful examples:
+| Char | URL encoded |
+| ------------- | -------------- |
+| - | %2D |
+| . | %2E |
+| / | %2F |
+| : | %3A |
+
+
+For example: `C:/my-path` would be `C%3A%2Fmy%2Dpath`
+A complete table can be found [here](https://www.w3schools.com/tags/ref_urlencode.ASP).
+
 ```yaml
 # Change the following line to match your path
 @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<<.glzr%5Czebar%5Cstyles%5Cglobal.css";
@@ -36,7 +49,7 @@ In order for imports to work you will need to update some paths in the files
 
 #### 2. styles/global.css 
 ```css
-/* Change the following imports in the same way as in config.yaml */
+/* Change the following imports, you don't need to url encode these like in config.yaml */
 @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/themes/rose-pine.css";
 @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/config.css";
 @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/animations.css";
