@@ -30,17 +30,13 @@ In order for imports to work you will need to update some paths in the files
 #### 1. config.yaml
 
 In order for zebar to able to import the css file, you need to url encode all
-special characters, some helpful examples:
-| Char | URL encoded |
-| ------------- | -------------- |
-| - | %2D |
-| . | %2E |
-| / | %2F |
-| : | %3A |
+special character, this can be done via services like https://www.urldecoder.org/.
 
-
-For example: `C:/my-path` would be `C%3A%2Fmy%2Dpath`
-A complete table can be found [here](https://www.w3schools.com/tags/ref_urlencode.ASP).
+For instance if you zebar config is stored at
+C:/Users/MyCoolUsername/.glzr/zebar. Your import link would look like this:
+`http://asset.localhost/C:/Users/MyCoolUsername/.glzr/zebar/styles/global.css`.
+Take this url and paste it to https://www.urldecoder.org/ and replace the import
+with that string.
 
 ```yaml
 # Change the following line to match your path
