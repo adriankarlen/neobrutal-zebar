@@ -1,0 +1,87 @@
+#center {
+  justify-self: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  border: var(--border-size) solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-size-bar) var(--shadow-size-bar) 0 var(--shadow);
+
+  #glazewm-workspaces {
+    display: flex;
+    align-items: center;
+
+    .workspace {
+      background: color-mix(in srgb, currentColor 30%, transparent);
+      border: var(--border-size) solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-size-button) var(--shadow-size-button) 0 var(--shadow);
+      transition:
+        box-shadow 0.2s,
+        transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+      margin: 4px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: none;
+        transform: translateY(var(--shadow-size-button)) translateX(var(--shadow-size-button));
+      }
+
+      &.displayed {
+        color: var(--displayed);
+      }
+
+      &.focused {
+        animation: press 0.2s;
+      }
+
+      &:nth-child(5n + 1) {
+        color: var(--ws-1);
+      }
+
+      &:nth-child(5n + 2) {
+        color: var(--ws-2);
+      }
+
+      &:nth-child(5n + 3) {
+        color: var(--ws-3);
+      }
+
+      &:nth-child(5n + 4) {
+        color: var(--ws-4);
+      }
+
+      &:nth-child(5n + 5) {
+        color: var(--ws-5);
+      }
+    }
+
+    #process-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & .process {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--process);
+        &.current {
+          color: var(--focused-process);
+        }
+        & i {
+          padding: 3px;
+          margin: 4px;
+        }
+      }
+    }
+
+    i {
+      font-size: 1rem;
+    }
+  }
+}

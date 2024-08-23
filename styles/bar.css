@@ -1,0 +1,15 @@
+#bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: var(--height);
+  margin: var(--bar-margin-y) var(--bar-margin-x);
+  color: var(--text);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+
+  i {
+    pointer-events: none;
+  }
+}

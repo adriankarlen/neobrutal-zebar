@@ -1,0 +1,185 @@
+global:
+  enable_devtools: true
+
+window/bar:
+  providers: ["self"]
+  width: "{{ self.args.MONITOR_WIDTH }}"
+  height: "275"
+  position_x: "{{ self.args.MONITOR_X }}"
+  position_y: "{{ self.args.MONITOR_Y }}"
+  z_order: "normal"
+  resizable: false
+  global_styles: |
+    @import "https://www.nerdfonts.com/assets/css/webfont.css";
+    @import "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css";
+    @import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<<.glzr%5Czebar%5Cstyles%5Cglobal.css";
+
+  group/left:
+    template/menu:
+      events:
+        - type: "click"
+          fn_path: "scripts/menu.js#toggleDropdown"
+          selector: ".dropdown-button"
+      template: |
+        <div class="dropdown-button">
+          <i class="ti ti-heart-filled"></i>
+        </div>
+
+    template/dropdown:
+      events:
+        - type: "click"
+          fn_path: "scripts/menu.js#powerDown"
+          selector: "#powerdown"
+        - type: "click"
+          fn_path: "scripts/menu.js#sleep"
+          selector: "#sleep"
+        - type: "click"
+          fn_path: "scripts/menu.js#logout"
+          selector: "#logout"
+      template: 
+        <a id="powerdown" href="#">
+          <i class="ti ti-power"></i>
+        </a>
+        <a id="sleep" href="#">
+          <i class="ti ti-zzz"></i>
+        </a>
+        <a id="logout" href="#">
+          <i class="ti ti-logout"></i>
+        </a>
+
+    template/memory:
+      providers: ["memory"]
+      template: |
+        <i class="ti ti-ruler-2"></i>
+        <span class="label">
+          {{ Math.round(memory.usage) }}%
+        </span>
+        <span class="meter">
+          <span style="width: {{Math.round(memory.usage) }}%"</span>
+        </span>
+
+    template/cpu:
+      providers: ["cpu"]
+      template: |
+        <div class={{cpu.usage > 85 ? "high-usage" : ""}}>
+          <i class="ti ti-cpu"></i>
+          <span class="label">
+            {{ Math.round(cpu.usage) }}%
+          </span>
+          <span class="meter">
+            <span style="width: {{Math.round(cpu.usage) }}%"</span>
+          </span>
+        </div>
+
+    template/battery:
+      providers: ["battery"]
+      template: |
+        <div class="
+            @switch (true) {
+              @case (Math.round(battery.chargePercent) === 100) { full }
+              @case (Math.round(battery.chargePercent) > 80) { good }
+              @case (Math.round(battery.chargePercent) > 50) { mid }
+              @case (Math.round(battery.chargePercent) > 25) { low }
+              @default { critical }
+            }
+          ">
+            <i class="{{ battery.state === 'charging' ? 'charging' : '' }} ti ti-bolt"></i>
+            <span class="label">
+              {{ Math.round(battery.chargePercent) }}%
+            </span>
+            <span class="meter">
+              <span style="width: {{Math.round(battery.chargePercent) }}%"</span>
+            </span>
+        </div>
+
+  group/center:
+    template/glazewm_workspaces:
+      providers: ["glazewm"]
+      events:
+        - type: "click"
+          fn_path: "scripts/glazewm.js#focusWorkspace"
+          selector: ".workspace"
+        - type: "load"
+          fn_path: "scripts/glazewm.js#appendProcessIcons"
+          selector: "#process-container"
+      template: |
+        @for (workspace of glazewm.currentWorkspaces) {
+          <button 
+            class="workspace {{ workspace.hasFocus ? 'focused' : '' }} {{ workspace.isDisplayed ? 'displayed' : '' }}"
+            id="{{ workspace.name }}"
+          >
+            <i class="
+              ti {{ workspace.hasFocus ? 'ti-point-filled' : workspace.isDisplayed ? 'ti-circle' : 'ti-point' }}
+            "></i>
+          </button>
+        }
+        <div id="process-container">
+          @for (child of glazewm.focusedWorkspace.children) {
+            <span class="process {{ child.hasFocus && "current"}}">
+              <i class="ti" data-process-name="{{ child.processName.toLowerCase() }}"></i>
+            </span> 
+          }
+        </div>
+
+  group/right:
+    template/now-playing:
+      providers: ["glazewm"]
+      template: |
+        @for (workspace of glazewm.allWorkspaces) {
+          @for (child of workspace.children) {
+            @if (child?.processName === "Spotify") {
+              @if (child.title === "Spotify Premium") {
+                <i class="ti ti-music-off"></i>
+                nothing is playing
+              } @else {
+                <i class="ti ti-music playing"></i>
+                <span class={{child.title.length > 62 ? "move" : ""}}>
+                  {{ child.title }}
+                </span>
+              }
+            }
+          }
+        }
+
+    template/network:
+      providers: ["network"]
+      template: |
+        @if (network.defaultInterface?.type === 'ethernet') {
+          <i class="nf nf-md-ethernet_cable"></i>
+        } @else if (network.defaultInterface?.type === 'wifi') {
+          @if (network.defaultGateway?.signalStrength >= 75) {<i class="ti ti-wifi"></i>}
+          @else if (network.defaultGateway?.signalStrength >= 50) {<i class="ti ti-wifi-2"></i>}
+          @else if (network.defaultGateway?.signalStrength >= 25) {<i class="ti ti-wifi-1"></i>}
+          @else {<i class="ti ti-wifi-0"></i>}
+          {{ network.defaultGateway?.ssid }}
+        } @else {
+          <i class="ti ti-wifi-off"></i>
+        }
+
+    template/weather:
+      providers: ["weather"]
+      template: |
+        @switch (weather.status) {
+          @case ('clear_day') {<i class="nf nf-weather-day_sunny"></i>}
+          @case ('clear_night') {<i class="nf nf-weather-night_clear"></i>}
+          @case ('cloudy_day') {<i class="nf nf-weather-day_cloudy"></i>}
+          @case ('cloudy_night') {<i class="nf nf-weather-night_alt_cloudy"></i>}
+          @case ('light_rain_day') {<i class="nf nf-weather-day_sprinkle"></i>}
+          @case ('light_rain_night') {<i class="nf nf-weather-night_alt_sprinkle"></i>}
+          @case ('heavy_rain_day') {<i class="nf nf-weather-day_rain"></i>}
+          @case ('heavy_rain_night') {<i class="nf nf-weather-night_alt_rain"></i>}
+          @case ('snow_day') {<i class="nf nf-weather-day_snow"></i>}
+          @case ('snow_night') {<i class="nf nf-weather-night_alt_snow"></i>}
+          @case ('thunder_day') {<i class="nf nf-weather-day_lightning"></i>}
+          @case ('thunder_night') {<i class="nf nf-weather-night_alt_lightning"></i>}
+        }
+        {{ weather.celsiusTemp }}°
+
+    template/separator:
+      template: |
+        <i class="nf nf-oct-dot_fill"></>
+
+    template/clock:
+      providers: ["date"]
+      template: |
+        {{ date.toFormat(date.now, 't') }}

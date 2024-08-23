@@ -1,0 +1,82 @@
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(10deg);
+  }
+  4% {
+    transform: rotate(-10deg);
+  }
+  6% {
+    transform: rotate(10deg);
+  }
+  8% {
+    transform: rotate(-10deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  12% {
+    transform: rotate(-10deg);
+  }
+  14% {
+    transform: rotate(10deg);
+  }
+  16% {
+    transform: rotate(-10deg);
+  }
+  18% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes press {
+  from {
+    transform: translateY(0px) translateX(0px);
+  }
+  to {
+    box-shadow: none;
+    transform: translateY(2px) translateX(2px);
+  }
+}
+
+@keyframes move {
+  0%,
+  25% {
+    transform: translateX(0%);
+    left: 0%;
+  }
+  75%,
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+  }
+}
