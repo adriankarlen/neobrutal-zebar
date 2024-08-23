@@ -21,7 +21,8 @@ https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 
 ### Getting the config in place
 
-Download the repo as zip, unzip it in you zebar configuration directory.
+Download the `neobrutal-zebar.zip` from the latest release. Unzip the contents
+inside your zebar config directory.
 
 ### Replacing values
 
