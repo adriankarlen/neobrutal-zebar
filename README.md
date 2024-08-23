@@ -1,5 +1,12 @@
 # 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
 
+## 🚀 Features
+
+- Process icons for current workspace, with current focus indicator.
+- System information meters, with dynamic coloring and animations.
+- Spotify, currently prepo as zip, unzip it in you zebar configuration directory.laying song.
+- Configuration using, css variables.
+
 > NOTE: This configuration is it's early development. Contributions are
 > welcome, especially to the process icon map, as I only mapped the ones I use
 > that could not be automapped.
