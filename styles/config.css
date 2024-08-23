@@ -5,7 +5,7 @@
   --bar-margin-x: 20px;
 
   /* fonts */
-  --font-family: "SF Pro Display", ui-monospace, monospace;
+  --font-family: "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
   --font-size: 16px;
   --font-weight: 500;
 
