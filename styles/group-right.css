@@ -1,6 +1,6 @@
 #right {
+  height: 100%;
   justify-self: end;
-  height: 40px;
   display: flex;
   align-items: center;
   background: var(--bg);

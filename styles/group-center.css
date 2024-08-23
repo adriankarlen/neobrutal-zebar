@@ -1,6 +1,6 @@
 #center {
+  height: 100%;
   justify-self: center;
-  height: 40px;
   display: flex;
   align-items: center;
   background: var(--bg);
