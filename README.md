@@ -7,7 +7,7 @@
 - Spotify, currently prepo as zip, unzip it in you zebar configuration directory.laying song.
 - Configuration using CSS-variables.
 
-> [IMPORTANT!]
+> [!IMPORTANT]
 >
 > This configuration is it's early development. Contributions are
 > welcome, especially to the process icon map, as I only mapped the ones I use
