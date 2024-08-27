@@ -1,8 +1,8 @@
-const processIconMap = {
+const iconMap = {
   // Terminals
   "wezterm-gui": { icon: "ti-terminal-2" },
   alacritty: { icon: "ti-terminal-2" },
-  WindowsTerminal: { icon: "ti-terminal-2" },
+  windowsterminal: { icon: "ti-terminal-2" },
 
   // Editors
   code: { icon: "ti-brand-vscode" }, // VS Code
@@ -10,13 +10,26 @@ const processIconMap = {
 
   // Communication
   "ms-teams": { icon: "ti-brand-teams" },
-  olk: { icon: "ti-mail" }, //Outlook
+  olk: { icon: "ti-mail" }, // Outlook
 
   // VPN
-  applicationframehost: { icon: "ti-spy" }, // Azure VPN Client
+  "azure vpn client": { icon: "ti-spy" }, // Azure VPN Client
 
   // Browsers
   zen: { icon: "ti-circle-letter-z" },
+  msedge: { icon: "ti-brand-edge" },
+
+  // Utils
+  snippingtool: { icon: "ti-screenshot" },
+  "control panel": { icon: "ti-settings" },
+  explorer: { icon: "ti-folder" },
+  photos: { icon: "ti-photo" },
+  sound: { icon: "ti-headphones" },
+  excel: { icon: "ti-file-spreadsheet" },
+  onenote: { icon: "ti-note" },
+  powerpnt: { icon: "ti-presentation" },
+  winword: { icon: "ti-file-word" },
+  mspaint: { icon: "ti-palette" },
 
   // Ignore
   msedgewebview2: { ignore: true },
@@ -36,15 +49,20 @@ const addProcessIconCallback = (mutationsList) => {
 
         iconNodes.forEach((iconNode) => {
           const processName = iconNode.getAttribute("data-process-name");
+          const title = iconNode.getAttribute("data-title");
 
-          if (!processName) return;
-
-          const process = processIconMap[processName];
-
+          if (!processName && !title) return;
+          const process = iconMap[processName] || iconMap[title];
           const unmapped = process == null;
           if (!unmapped && process.ignore) {
             iconNode.remove();
             return;
+          }
+
+          /** INFO: Edge case, all Windows apps has this process name,
+           * to avoid some manual mapping, use title without brand */
+          if (unmapped && processName == "applicationframehost") {
+            iconNode.classList.add(`ti-${title}`);
           }
 
           iconNode.classList.add(
@@ -64,4 +82,3 @@ if (parentNode) {
 } else {
   console.error("Parent node #glazewm-workspaces not found.");
 }
-;

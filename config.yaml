@@ -115,7 +115,7 @@ window/bar:
           @for (child of glazewm.focusedWorkspace.children) {
             @if (child.state.type != "minimized") {
               <span class="process {{ child.hasFocus && "current"}}">
-                <i class="ti" data-process-name="{{ child.processName.toLowerCase() }}"></i>
+                <i class="ti" data-title="{{ child.title.toLowerCase() }}" data-process-name="{{ child.processName.toLowerCase() }}"></i>
               </span> 
             }
           }
