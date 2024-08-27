@@ -20,7 +20,7 @@
 ![image](https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/fullscreen.png)
 ### Workspaces
 
-https://github.com/user-attachments/assets/d1e1ce3f-37bd-4ee7-8942-611992039014
+https://github.com/user-attachments/assets/38e4a09f-1583-4e2a-84e5-6da7156402b2
 
 ### System info
 
