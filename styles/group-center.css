@@ -61,6 +61,12 @@
       }
     }
 
+    #tiling-direction {
+      color: var(--tiling-direction);
+      padding: 3px;
+      margin: 4px;
+    }
+
     #process-container {
       display: flex;
       align-items: center;
