@@ -31,13 +31,13 @@
   --battery-low: var(--rp-love);
   --focused-process: var(--rp-text);
   --process: var(--rp-muted);
-  --focused: var(--rp-love);
   --displayed: var(--rp-text);
   --ws-1: var(--rp-gold);
-  --ws-2: var(--rp-rose);
+  --ws-2: var(--rp-love);
   --ws-3: var(--rp-pine);
   --ws-4: var(--rp-foam);
   --ws-5: var(--rp-iris);
+  --tiling-direction: var(--rp-rose);
   --not-playing: var(--rp-love);
   --now-playing: var(--rp-pine);
   --network: var(--rp-text);

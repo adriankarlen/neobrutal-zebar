@@ -113,6 +113,7 @@ window/bar:
             "></i>
           </button>
         }
+        <i id="tiling-direction" class="ti ti-switch-{{glazewm.tilingDirection}}"></i>
         <div id="process-container">
           @for (child of glazewm.focusedWorkspace.children) {
             <span class="process {{ child.hasFocus && "current"}}">
