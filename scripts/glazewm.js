@@ -5,13 +5,18 @@ const processIconMap = {
   WindowsTerminal: { icon: "ti-terminal-2" },
 
   // Editors
-  code: { icon: "ti-brand-vscode" },
-  devenv: { icon: "ti-brand-visual-studio" },
+  code: { icon: "ti-brand-vscode" }, // VS Code
+  devenv: { icon: "ti-brand-visual-studio" }, // Visual Studio
 
   // Communication
   "ms-teams": { icon: "ti-brand-teams" },
-  olk: { icon: "ti-mail" },
-  "application-frame-host": { icon: "ti-spy" },
+  olk: { icon: "ti-mail" }, //Outlook
+
+  // VPN
+  applicationframehost: { icon: "ti-spy" }, // Azure VPN Client
+
+  // Browsers
+  zen: { icon: "ti-circle-letter-z" },
 
   // Ignore
   msedgewebview2: { ignore: true },
