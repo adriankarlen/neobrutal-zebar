@@ -99,9 +99,6 @@ window/bar:
         - type: "click"
           fn_path: "scripts/glazewm.js#focusWorkspace"
           selector: ".workspace"
-        - type: "load"
-          fn_path: "scripts/glazewm.js#appendProcessIcons"
-          selector: "#process-container"
       template: |
         @for (workspace of glazewm.currentWorkspaces) {
           <button 
@@ -116,9 +113,11 @@ window/bar:
         <i id="tiling-direction" class="ti ti-switch-{{glazewm.tilingDirection}}"></i>
         <div id="process-container">
           @for (child of glazewm.focusedWorkspace.children) {
-            <span class="process {{ child.hasFocus && "current"}}">
-              <i class="ti" data-process-name="{{ child.processName.toLowerCase() }}"></i>
-            </span> 
+            @if (child.state.type != "minimized") {
+              <span class="process {{ child.hasFocus && "current"}}">
+                <i class="ti" data-process-name="{{ child.processName.toLowerCase() }}"></i>
+              </span> 
+            }
           }
         </div>
 
