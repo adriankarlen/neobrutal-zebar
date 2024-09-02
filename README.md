@@ -43,14 +43,16 @@ In order for zebar to able to import the css file, you need to url encode all
 special character, this can be done via services like https://www.urldecoder.org/.
 
 For instance if you zebar config is stored at
-C:/Users/MyCoolUsername/.glzr/zebar. Your import link would look like this:
+_C:/Users/MyCoolUsername/.glzr/zebar_. Your import link would look like this:
 `http://asset.localhost/C:/Users/MyCoolUsername/.glzr/zebar/styles/global.css`.
-Take this url and paste it to https://www.urldecoder.org/ and replace the import
-with that string.
+Everything following `localhost/` needs to be url encoded for the import to work
+inside the yaml. This would mean that you would take _C:/Users/MyCoolUsername/.glzr/zebar/styles/global.css_
+and paste it to https://www.urldecoder.org/ and replace the import with that string.
+The resulting string will then look like this: _"http://asset.localhost/C%3A%2FUsers%2FMyCoolUsername%2F.glzr%2Fzebar%2Fstyles%2Fglobal.css"_
 
 ```yaml
 # Change the following line to match your path
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<<.glzr%5Czebar%5Cstyles%5Cglobal.css";
+@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<<.glzr%2Fzebar%2Fstyles%2Fglobal.css";
 ```
 
 #### 2. styles/global.css 
