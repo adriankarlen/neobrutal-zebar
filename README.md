@@ -74,7 +74,86 @@ In `styles/config.css` there exists a lot of configuration available to tweak.
 
 ## 🎨 Themes
 
-At the moment the only theme available is [Rosé Pine](https://rosepinetheme.com/) but I plan to add more themes, or if you have a theme you want to add, don't hesitate to contribute.
+### 🌷Rosé Pine (default)
+<details>
+<summary>Example config</summary>
+
+```css
+/* colors */
+--text: var(--rp-text);
+--bg: var(--rp-overlay);
+--border: var(--rp-highlight-low);
+--shadow: var(--rp-highlight-low);
+--icon: var(--rp-love);
+--memory: var(--rp-iris);
+--cpu: var(--rp-rose);
+--cpu-high-usage: var(--rp-love);
+--battery-good: var(--rp-pine);
+--battery-mid: var(--rp-gold);
+--battery-low: var(--rp-love);
+--focused-process: var(--rp-text);
+--process: var(--rp-muted);
+--displayed: var(--rp-text);
+--ws-1: var(--rp-gold);
+--ws-2: var(--rp-love);
+--ws-3: var(--rp-pine);
+--ws-4: var(--rp-foam);
+--ws-5: var(--rp-iris);
+--tiling-direction: var(--rp-rose);
+--not-playing: var(--rp-love);
+--now-playing: var(--rp-pine);
+--network: var(--rp-text);
+--weather: var(--rp-text);
+```
+
+</details>
+
+### 😸 Catppuccin
+<img src="https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/catppuccin.png" />
+
+Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/docs/css.md), configure css variables accoriding to your liking.
+
+<details>
+<summary>Config show in picture above</summary>
+
+```css
+/* border */
+--border-size: 2px;
+--radius: 9999px;
+
+/* shadow */
+--shadow-size-bar: 0px;
+--shadow-size-button: 0px;
+
+/* colors */
+--text: var(--ctp-mocha-text);
+--bg: var(--ctp-mocha-surface0);
+--border: var(--ctp-mocha-crust);
+--border-button: var(--ctp-mocha-crust);
+--shadow: var(--ctp-mocha-mantle);
+--icon: var(--ctp-mocha-red);
+--memory: var(--ctp-mocha-mauve);
+--cpu: var(--ctp-mocha-pink);
+--cpu-high-usage: var(--ctp-mocha-red);
+--battery-good: var(--ctp-mocha-green);
+--battery-mid: var(--ctp-mocha-peach);
+--battery-low: var(--ctp-mocha-red);
+--focused-process: var(--ctp-mocha-text);
+--process: var(--ctp-mocha-surface2);
+--displayed: var(--ctp-mocha-text);
+--ws-1: var(--ctp-mocha-peach);
+--ws-2: var(--ctp-mocha-red);
+--ws-3: var(--ctp-mocha-green);
+--ws-4: var(--ctp-mocha-blue);
+--ws-5: var(--ctp-mocha-mauve);
+--tiling-direction: var(--ctp-mocha-lavender);
+--not-playing: var(--ctp-mocha-red);
+--now-playing: var(--ctp-mocha-green);
+--network: var(--ctp-mocha-text);
+--weather: var(--ctp-mocha-text);
+```
+
+</details>
 
 ## 🍳 Recipies
 
