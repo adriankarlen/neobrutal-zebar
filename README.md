@@ -78,6 +78,7 @@ In `styles/config.css` there exists a lot of configuration available to tweak.
 <details>
 <summary>Example config</summary>
 
+##### config.css
 ```css
 /* colors */
 --text: var(--rp-text);
@@ -116,6 +117,7 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 <details>
 <summary>Config show in picture above</summary>
 
+##### config.css
 ```css
 /* border */
 --border-size: 2px;
@@ -153,6 +155,7 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 --weather: var(--ctp-mocha-text);
 ```
 
+##### config.yaml
 ```html
 <!-- replace this line -->
 <i class="ti ti-heart-filled"></i>
