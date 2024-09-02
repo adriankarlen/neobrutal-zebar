@@ -153,6 +153,12 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 --weather: var(--ctp-mocha-text);
 ```
 
+```html
+<!-- replace this line -->
+<i class="ti ti-heart-filled"></i>
+<!-- with this line -->
+<i class="ti ti-cat"></i>
+```
 </details>
 
 ## 🍳 Recipies
