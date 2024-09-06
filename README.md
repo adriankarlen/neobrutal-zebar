@@ -4,7 +4,7 @@
 
 - Process icons for current workspace, with current focus indicator.
 - System information meters, with dynamic coloring and animations.
-- Spotify, currently prepo as zip, unzip it in you zebar configuration directory.laying song.
+- Spotify, currently playing song.
 - Configuration using CSS-variables.
 
 > [!IMPORTANT]
