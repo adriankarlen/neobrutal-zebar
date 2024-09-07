@@ -113,7 +113,7 @@ window/bar:
         <i id="tiling-direction" class="ti ti-switch-{{glazewm.tilingDirection}}"></i>
         <div id="process-container">
           @for (child of glazewm.focusedWorkspace.children) {
-            @if (child.state.type != "minimized") {
+            @if (child.state != null && child.state.type != "minimized") {
               <span class="process {{ child.hasFocus && "current"}}">
                 <i class="ti" data-title="{{ child.title.toLowerCase() }}" data-process-name="{{ child.processName.toLowerCase() }}"></i>
               </span> 
