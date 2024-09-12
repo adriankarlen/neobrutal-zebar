@@ -1,6 +1,6 @@
 # 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
 
-## 🚀 Features
+## ✨ Features
 
 - Process icons for current workspace, with current focus indicator.
 - System information meters, with dynamic coloring and animations.
@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/38e4a09f-1583-4e2a-84e5-6da7156402b2
 
 https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 
-## ⚙️ Configuration
+## 🚀 Getting started
 
 ### Getting the config in place
 
