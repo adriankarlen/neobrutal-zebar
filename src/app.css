@@ -1,0 +1,54 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css";
+@import "themes/rose-pine.css";
+@import "themes/catppuccin.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* sizes */
+  --height: 40px;
+  --bar-margin-y: 10px;
+  --bar-margin-x: 20px;
+
+  /* fonts */
+  --font-family: "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+
+  /* border */
+  --border-size: 2px;
+  --radius: 0px;
+
+  /* shadow */
+  --shadow-size-bar: 4px;
+  --shadow-size-button: 2px;
+
+  /* colors */
+  --text: var(--rp-text);
+  --bg: var(--rp-overlay);
+  --border: var(--rp-highlight-low);
+  --shadow: var(--rp-highlight-low);
+  --icon: var(--rp-love);
+  --memory: var(--rp-iris);
+  --cpu: var(--rp-rose);
+  --cpu-high-usage: var(--rp-love);
+  --battery-good: var(--rp-pine);
+  --battery-mid: var(--rp-gold);
+  --battery-low: var(--rp-love);
+  --focused-process: var(--rp-text);
+  --process: var(--rp-muted);
+  --displayed: var(--rp-text);
+  --ws-1: var(--rp-gold);
+  --ws-2: var(--rp-love);
+  --ws-3: var(--rp-pine);
+  --ws-4: var(--rp-foam);
+  --ws-5: var(--rp-iris);
+  --tiling-direction: var(--rp-rose);
+  --not-playing: var(--rp-love);
+  --now-playing: var(--rp-pine);
+  --network: var(--rp-text);
+  --weather: var(--rp-text);
+}

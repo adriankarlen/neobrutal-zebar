@@ -1,0 +1,56 @@
+:root {
+  /* Rosé Pine Dawn */
+  --rp-base: 32 57 95;
+  --rp-surface: 35 100 98;
+  --rp-overlay: 33 43 91;
+  --rp-muted: 257 9 61;
+  --rp-subtle: 248 12 52;
+  --rp-text: 248 19 40;
+  --rp-love: 343 35 55;
+  --rp-gold: 35 81 56;
+  --rp-rose: 3 53 67;
+  --rp-pine: 197 53 34;
+  --rp-foam: 189 30 48;
+  --rp-iris: 268 21 57;
+  --rp-highlight-low: 25 35 93;
+  --rp-highlight-med: 10 9 86;
+  --rp-highlight-high: 315 4 80;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Rosé Pine */
+    /* --rp-base: 249 22 12; */
+    /* --rp-surface: 247 23 15; */
+    /* --rp-overlay: 248 25 18; */
+    /* --rp-muted: 249 12 47; */
+    /* --rp-subtle: 248 15 61; */
+    /* --rp-text: 245 50 91; */
+    /* --rp-love: 343 76 68; */
+    /* --rp-gold: 35 88 72; */
+    /* --rp-rose: 2 55 83; */
+    /* --rp-pine: 197 49 38; */
+    /* --rp-foam: 189 43 73; */
+    /* --rp-iris: 267 57 78; */
+    /* --rp-highlight-low: 244 18 15; */
+    /* --rp-highlight-med: 249 15 28; */
+    /* --rp-highlight-high: 248 13 36; */
+
+    /* Rosé Pine Moon */
+    --rp-base: 246 24 17;
+    --rp-surface: 248 24 20;
+    --rp-overlay: 248 21 26;
+    --rp-muted: 249 12 47;
+    --rp-subtle: 248 15 61;
+    --rp-text: 245 50 91;
+    --rp-love: 343 76 68;
+    --rp-gold: 35 88 72;
+    --rp-rose: 2 66 75;
+    --rp-pine: 197 48 47;
+    --rp-foam: 189 43 73;
+    --rp-iris: 267 57 78;
+    --rp-highlight-low: 245 22 20;
+    --rp-highlight-med: 247 16 30;
+    --rp-highlight-high: 249 15 38;
+  }
+}
