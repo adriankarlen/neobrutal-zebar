@@ -1,6 +1,7 @@
 # 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
 
-An Zebar configuration for Zebar V2 build in Svelte with Tailwind.
+An Zebar configuration for Zebar V2 build in Svelte with Tailwind. If you are
+still using V1 of Zebar the old config is available in the [V1 branch](https://github.com/adriankarlen/neobrutal-zebar/tree/v1). 
 
 ## ✨ Features
 
