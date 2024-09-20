@@ -6,7 +6,9 @@
   import Workspaces from "../components/Workspaces.svelte";
 </script>
 
-<div class="grid grid-cols-3 items-center h-bar my-zby mx-zbx text-zb-text">
+<div
+  class="grid grid-cols-3 items-center h-bar my-zby mx-zbx text-zb-text text-zb-size font-base"
+>
   <Group class="justify-self-start">
     <LeftGroup />
   </Group>

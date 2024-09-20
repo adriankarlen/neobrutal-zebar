@@ -2,10 +2,16 @@
   import { onMount } from "svelte";
   import { init } from "zebar";
   import Button from "./Button.svelte";
+  import Meter from "./Meter.svelte";
+  import type {
+    CpuOutput,
+    BatteryOutput,
+    MemoryOutput
+  } from "../types/providers";
 
-  let cpuOutput = $state({ usage: 0 });
-  let batteryOutput = $state({ chargePercent: 0 });
-  let memoryOutput = $state({ usage: 0 });
+  let cpuOutput = $state<CpuOutput>();
+  let batteryOutput = $state<BatteryOutput>();
+  let memoryOutput = $state<MemoryOutput>();
 
   onMount(async () => {
     const zebarCtx = await init();
@@ -22,18 +28,24 @@
   });
 </script>
 
-<div class="flex flex-row gap-2 items-center">
-  <Button textColor="text-zb-icon" iconClass="heart-filled" />
-  <div>
-    <i class="ti ti-ruler-2 text-zb-memory"></i>
-    {Math.round(memoryOutput.usage)}%
+<div class="flex flex-row gap-3 items-center">
+  <Button class="text-zb-icon" iconClass="heart-filled" />
+  <div class="flex gap-1 items-center">
+    <i class="ti ti-ruler-2"></i>
+    <Meter
+      class="bg-zb-memory"
+      percent={Math.round(memoryOutput?.usage ?? 0)}
+    />
   </div>
-  <div>
-    <i class="ti ti-cpu text-zb-cpu"></i>
-    {Math.round(cpuOutput.usage)}%
+  <div class="flex gap-1 items-center">
+    <i class="ti ti-cpu"></i>
+    <Meter class="bg-zb-cpu" percent={Math.round(cpuOutput?.usage ?? 0)} />
   </div>
-  <div>
-    <i class="ti ti-bolt text-zb-battery-good"></i>
-    {batteryOutput.chargePercent}%
+  <div class="flex gap-1 items-center">
+    <i class="ti ti-bolt"></i>
+    <Meter
+      class="bg-zb-battery-good"
+      percent={Math.round(batteryOutput?.chargePercent ?? 100)}
+    />
   </div>
 </div>

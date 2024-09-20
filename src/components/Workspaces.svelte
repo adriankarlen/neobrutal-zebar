@@ -1,8 +1,9 @@
 <script lang="ts">
   import { init } from "zebar";
   import Button from "./Button.svelte";
-  import type { TilingDirection, Window, Workspace } from "glazewm";
+  import type { Window} from "glazewm";
   import { onMount } from "svelte";
+  import type { GlazeWmOutput } from "../types/providers";
 
   type Icon = {
     icon?: string;
@@ -62,14 +63,7 @@
     }
   };
 
-  type GlazeWmOutput = {
-    currentWorkspaces: Workspace[];
-    focusedWorkspace?: Workspace;
-    tilingDirection?: TilingDirection;
-  };
-  let glazewmOutput = $state<GlazeWmOutput>({
-    currentWorkspaces: []
-  });
+  let glazewmOutput = $state<GlazeWmOutput>();
   onMount(async () => {
     const zebarCtx = await init();
     const glazewm = await zebarCtx.createProvider({ type: "glazewm" });
@@ -77,29 +71,31 @@
   });
 </script>
 
-<div class="flex flex-row gap-2">
-  {#each glazewmOutput!.currentWorkspaces as workspace, i}
-    <Button
-      iconClass={`ti ${workspace.hasFocus ? "ti-point-filled" : "ti-point"}`}
-      textColor={"text-zb-ws-" + i}
-    />
-  {/each}
-  <div class="flex items-center justify-center text-zb-tiling-direction">
-    <i class="ti ti-switch-{glazewmOutput?.tilingDirection}"></i>
+{#if glazewmOutput}
+  <div class="flex flex-row gap-2">
+    {#each glazewmOutput.currentWorkspaces as workspace, i}
+      <Button
+        iconClass="ti {workspace.hasFocus ? 'ti-point-filled' : 'ti-point'}"
+        class="text-zb-ws-{i}"
+      />
+    {/each}
+    <div class="flex items-center justify-center text-zb-tiling-direction">
+      <i class="ti ti-switch-{glazewmOutput?.tilingDirection}"></i>
+    </div>
+    <div class="flex items-center gap-2">
+      {#if glazewmOutput.focusedWorkspace}
+        {#each glazewmOutput.focusedWorkspace!.children as child}
+          {#if "state" in child && child.state?.type != "minimized"}
+            <span
+              class={child.hasFocus
+                ? "text-zb-focused-process"
+                : "text-zb-process"}
+            >
+              <i class="ti {getProcessIcon(child as Window)}"></i>
+            </span>
+          {/if}
+        {/each}
+      {/if}
+    </div>
   </div>
-  <div class="flex items-center gap-2">
-    {#if glazewmOutput.focusedWorkspace}
-      {#each glazewmOutput.focusedWorkspace!.children as child}
-        {#if "state" in child && child.state?.type != "minimized"}
-          <span
-            class={child.hasFocus
-              ? "text-zb-focused-process"
-              : "text-zb-process"}
-          >
-            <i class={`ti ${getProcessIcon(child as Window)}`}></i>
-          </span>
-        {/if}
-      {/each}
-    {/if}
-  </div>
-</div>
+{/if}

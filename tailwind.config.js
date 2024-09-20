@@ -41,7 +41,7 @@ export default {
         blend: generateBlends()
       },
       borderRadius: {
-        DEFUALT: "var(--radius)"
+        base: "var(--radius)"
       },
       borderWidth: {
         DEFAULT: "var(--border-size)"
@@ -62,6 +62,9 @@ export default {
       },
       fontWeight: {
         base: "var(--font-weight)"
+      },
+      fontSize: {
+        "zb-size": "var(--font-size)"
       },
       height: {
         bar: "var(--height)"

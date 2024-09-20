@@ -1,9 +1,14 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { init } from "zebar";
-  import type { NetworkOutput, WeatherOutput } from "../types/providers";
+  import type {
+    DateOutput,
+    NetworkOutput,
+    WeatherOutput
+  } from "../types/providers";
+  import NowPlaying from "./NowPlaying.svelte";
 
-  let dateOutput = $state({ formatted: "" });
+  let dateOutput = $state<DateOutput>();
   let networkOutput = $state<NetworkOutput>();
   let weatherOutput = $state<WeatherOutput>();
 
@@ -13,7 +18,7 @@
     const [date, network, weather] = await Promise.all([
       zebarCtx.createProvider({ type: "date", formatting: "HH:mm" }),
       zebarCtx.createProvider({ type: "network" }),
-      zebarCtx.createProvider({ type: "weather" })
+      zebarCtx.createProvider({ type: "weather", refreshInterval: 10000 })
     ]);
 
     date.onOutput((output) => (dateOutput = output));
@@ -22,7 +27,8 @@
   });
 </script>
 
-<div class="flex flex-row gap-2 items-center">
+<div class="flex flex-row gap-3 items-center">
+  <NowPlaying />
   <div class="flex flex-row items-center gap-1">
     {#if networkOutput?.defaultInterface?.type === "ethernet"}
       <i class="ti ti-network"></i>
@@ -41,34 +47,36 @@
       <i class="ti ti-wifi-off"></i>
     {/if}
   </div>
-  <div>
-    {#if weatherOutput?.status === "clear_day"}
-      <i class="nf nf-weather-day_sunny"></i>
-    {:else if weatherOutput?.status === "clear_night"}
-      <i class="nf nf-weather-night_clear"></i>
-    {:else if weatherOutput?.status === "cloudy_day"}
-      <i class="nf nf-weather-day_cloudy"></i>
-    {:else if weatherOutput?.status === "cloudy_night"}
-      <i class="nf nf-weather-night_alt_cloudy"></i>
-    {:else if weatherOutput?.status === "light_rain_day"}
-      <i class="nf nf-weather-day_sprinkle"></i>
-    {:else if weatherOutput?.status === "light_rain_night"}
-      <i class="nf nf-weather-night_alt_sprinkle"></i>
-    {:else if weatherOutput?.status === "heavy_rain_day"}
-      <i class="nf nf-weather-day_rain"></i>
-    {:else if weatherOutput?.status === "heavy_rain_night"}
-      <i class="nf nf-weather-night_alt_rain"></i>
-    {:else if weatherOutput?.status === "snow_day"}
-      <i class="nf nf-weather-day_snow"></i>
-    {:else if weatherOutput?.status === "snow_night"}
-      <i class="nf nf-weather-night_alt_snow"></i>
-    {:else if weatherOutput?.status === "thunder_day"}
-      <i class="nf nf-weather-day_lightning"></i>
-    {:else if weatherOutput?.status === "thunder_night"}
-      <i class="nf nf-weather-night_alt_lightning"></i>
-    {/if}
-    {weatherOutput?.celsiusTemp}°
-  </div>
+  {#if weatherOutput}
+    <div>
+      {#if weatherOutput.status === "clear_day"}
+        <i class="nf nf-weather-day_sunny"></i>
+      {:else if weatherOutput.status === "clear_night"}
+        <i class="nf nf-weather-night_clear"></i>
+      {:else if weatherOutput.status === "cloudy_day"}
+        <i class="nf nf-weather-day_cloudy"></i>
+      {:else if weatherOutput.status === "cloudy_night"}
+        <i class="nf nf-weather-night_alt_cloudy"></i>
+      {:else if weatherOutput.status === "light_rain_day"}
+        <i class="nf nf-weather-day_sprinkle"></i>
+      {:else if weatherOutput.status === "light_rain_night"}
+        <i class="nf nf-weather-night_alt_sprinkle"></i>
+      {:else if weatherOutput.status === "heavy_rain_day"}
+        <i class="nf nf-weather-day_rain"></i>
+      {:else if weatherOutput.status === "heavy_rain_night"}
+        <i class="nf nf-weather-night_alt_rain"></i>
+      {:else if weatherOutput.status === "snow_day"}
+        <i class="nf nf-weather-day_snow"></i>
+      {:else if weatherOutput.status === "snow_night"}
+        <i class="nf nf-weather-night_alt_snow"></i>
+      {:else if weatherOutput.status === "thunder_day"}
+        <i class="nf nf-weather-day_lightning"></i>
+      {:else if weatherOutput.status === "thunder_night"}
+        <i class="nf nf-weather-night_alt_lightning"></i>
+      {/if}
+      {Math.round(weatherOutput.celsiusTemp)}°
+    </div>
+  {/if}
   <i class="ti ti-point-filled"></i>
-  {dateOutput.formatted}
+  {dateOutput?.formatted}
 </div>
