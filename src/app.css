@@ -20,7 +20,7 @@
 
   /* border */
   --border-size: 0.125rem;
-  --radius: 0.25rem;
+  --radius: 0;
 
   /* shadow */
   --shadow-size-bar: 0.25rem;
