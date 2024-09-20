@@ -1,5 +1,8 @@
 # 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
 
+An Zebar configuration for Zebar V2 build in Svelte with Tailwind. If you are
+still using V1 of Zebar the old config is available in the [V1 branch](https://github.com/adriankarlen/neobrutal-zebar/tree/v1). 
+
 ## ✨ Features
 
 - Process icons for current workspace, with current focus indicator.
@@ -33,44 +36,9 @@ https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 Download the `neobrutal-zebar.zip` from the latest release. Unzip the contents
 inside your zebar config directory.
 
-### Replacing values
-
-In order for imports to work you will need to update some paths in the files
-
-#### 1. config.yaml
-
-In order for zebar to able to import the css file, you need to url encode all
-special character, this can be done via services like https://www.urldecoder.org/.
-
-For instance if you zebar config is stored at
-_C:/Users/MyCoolUsername/.glzr/zebar_. Your import link would look like this:
-`http://asset.localhost/C:/Users/MyCoolUsername/.glzr/zebar/styles/global.css`.
-Everything following `localhost/` needs to be url encoded for the import to work
-inside the yaml. This would mean that you would take _C:/Users/MyCoolUsername/.glzr/zebar/styles/global.css_
-and paste it to https://www.urldecoder.org/ and replace the import with that string.
-The resulting string will then look like this: _"http://asset.localhost/C%3A%2FUsers%2FMyCoolUsername%2F.glzr%2Fzebar%2Fstyles%2Fglobal.css"_
-
-```yaml
-# Change the following line to match your path
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<<.glzr%2Fzebar%2Fstyles%2Fglobal.css";
-```
-
-#### 2. styles/global.css 
-
-```css
-/* Change the following imports, you don't need to url encode these like in config.yaml */
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/themes/rose-pine.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/config.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/animations.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/bar.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/group-left.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/group-center.css";
-@import "http://asset.localhost/>> PATH TO YOUR YOUR GLZR CONFIG FOLDER<</.glzr/zebar/styles/group-right.css";
-```
-
 ### Configuring CSS-variables
 
-In `styles/config.css` there exists a lot of configuration available to tweak.
+In `src/app.css` there exists a lot of configuration available to tweak.
 
 ## 🎨 Themes
 
@@ -78,7 +46,7 @@ In `styles/config.css` there exists a lot of configuration available to tweak.
 <details>
 <summary>Example config</summary>
 
-##### config.css
+##### src/app.css
 ```css
 /* colors */
 --text: var(--rp-text);
@@ -117,15 +85,14 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 <details>
 <summary>Config show in picture above</summary>
 
-##### config.css
+##### src/app.css
 ```css
 /* border */
---border-size: 2px;
 --radius: 9999px;
 
 /* shadow */
---shadow-size-bar: 0px;
---shadow-size-button: 0px;
+--shadow-size-bar: 0;
+--shadow-size-button: 0;
 
 /* colors */
 --text: var(--ctp-mocha-text);
@@ -155,12 +122,12 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 --weather: var(--ctp-mocha-text);
 ```
 
-##### config.yaml
-```html
+##### src/components/RightGroup.svelte
+```svelte
 <!-- replace this line -->
-<i class="ti ti-heart-filled"></i>
+<Button class="text-zb-icon" iconClass="heart-filled" />
 <!-- with this line -->
-<i class="ti ti-cat"></i>
+<Button class="text-zb-icon" iconClass="cat" />
 ```
 </details>
 
