@@ -1,7 +1,7 @@
 <script lang="ts">
   import { init } from "zebar";
   import Button from "./Button.svelte";
-  import type { Window} from "glazewm";
+  import type { Window } from "glazewm";
   import { onMount } from "svelte";
   import type { GlazeWmOutput } from "../types/providers";
 
@@ -77,11 +77,16 @@
       <Button
         iconClass="ti {workspace.hasFocus ? 'ti-point-filled' : 'ti-point'}"
         class="text-zb-ws-{i}"
+        callback={() =>
+          glazewmOutput!.runCommand(`focus --workspace ${workspace.name}`)}
       />
     {/each}
-    <div class="flex items-center justify-center text-zb-tiling-direction">
+    <button
+      class="flex items-center justify-center text-zb-tiling-direction"
+      onclick={() => glazewmOutput!.runCommand("toggle-tiling-direction")}
+    >
       <i class="ti ti-switch-{glazewmOutput?.tilingDirection}"></i>
-    </div>
+    </button>
     <div class="flex items-center gap-2">
       {#if glazewmOutput.focusedWorkspace}
         {#each glazewmOutput.focusedWorkspace!.children as child}
