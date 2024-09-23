@@ -1,4 +1,4 @@
-# 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)  
+# 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)
 
 An Zebar configuration for Zebar V2 build in Svelte with Tailwind. If you are
 still using V1 of Zebar the old config is available in the [V1 branch](https://github.com/adriankarlen/neobrutal-zebar/tree/v1). 
@@ -31,12 +31,36 @@ https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 
 ## 🚀 Getting started
 
-### Getting the config in place
+### Simple installation (using defaults)
 
 Download the `neobrutal-zebar.zip` from the latest release. Unzip the contents
 inside your zebar config directory.
 
-### Configuring CSS-variables
+> [!NOTE]
+> If you are using window scaling in windows, you might need to edit
+> `bar.zebar.json` to get a correct height (default is `60px`).
+
+### Advanced installation (allows for customization)
+
+#### Prerequisites
+
+- Package manager/runtime of your choice (`bun` (recommended), `npm`, `pnpm`, `yarn`, etc). I am
+   using `bun` so onwards I will show how to use that.
+
+#### Instructions
+1. Download the repo and unzip it inside you zebar configuration directory
+2. Edit your Zebar `settings.json` to point to the neobrutal directory + `/build/index.html`. Example: `neobrutal-zebar/build/index.html`
+3. Navigate to the root dir of neobrutal-zebar.
+4. Run a install command for your selected package manager.
+    ```bash
+    bun install
+    ```
+5. Make any edits you want (see [Themes](#Themes) and [Recipies](#Recipies)  )
+6. Build the project
+    ```bash
+    bun run build
+    ```
+7. Launch Zebar
 
 In `src/app.css` there exists a lot of configuration available to tweak.
 
