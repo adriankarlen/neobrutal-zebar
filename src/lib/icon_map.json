@@ -1,0 +1,74 @@
+[
+  {
+    "iconName": "ti-terminal-2",
+    "appNames": ["alacritty", "wezterm", "wezterm-gui", "windowsterminal"]
+  },
+  {
+    "iconName": "ti-brand-vscode",
+    "appNames": ["code"]
+  },
+  {
+    "iconName": "ti-brand-visual-studio",
+    "appNames": ["devenv"]
+  },
+  {
+    "iconName": "ti-brand-teams",
+    "appNames": ["ms-teams"]
+  },
+  {
+    "iconName": "ti-mail",
+    "appNames": ["airmail", "olk"]
+  },
+  {
+    "iconName": "ti-circle-letter-z",
+    "appNames": ["zen"]
+  },
+  {
+    "iconName": "msedge",
+    "appNames": ["ti-brand-edge"]
+  },
+  {
+    "iconName": "ti-spy",
+    "appNames": ["azure vpn client"]
+  },
+  {
+    "iconName": "ti-screenshot",
+    "appNames": ["snippingtool"]
+  },
+  {
+    "iconName": "ti-settings",
+    "appNames": ["control panel", "settings"]
+  },
+  {
+    "iconName": "ti-folder",
+    "appNames": ["explorer"]
+  },
+  {
+    "iconName": "ti-photo",
+    "appNames": ["photos"]
+  },
+  {
+    "iconName": "ti-headphones",
+    "appNames": ["sound"]
+  },
+  {
+    "iconName": "ti-file-spreadsheet",
+    "appNames": ["excel"]
+  },
+  {
+    "iconName": "ti-note",
+    "appNames": ["onenote"]
+  },
+  {
+    "iconName": "ti-presentation",
+    "appNames": ["powerpnt"]
+  },
+  {
+    "iconName": "ti-file-word",
+    "appNames": ["winword"]
+  },
+  {
+    "iconName": "ti-palette",
+    "appNames": ["mspaint"]
+  }
+]
