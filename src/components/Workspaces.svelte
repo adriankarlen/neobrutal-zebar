@@ -5,26 +5,23 @@
   import { onMount } from "svelte";
   import type { GlazeWmOutput } from "../types/providers";
   import iconMap from "$lib/icon_map.json";
-  import { get } from "svelte/store";
+  import ignoredApps from "$lib/ignored_apps.json";
 
   const getProcessIcon = (child: Window) => {
-    if (!child) return "";
+    const possibleAppNames = [
+      child.title.toLowerCase(),
+      child.processName.toLowerCase()
+    ];
+
+    if (ignoredApps.find((app) => possibleAppNames.includes(app.name))) return;
 
     let entry = iconMap.find((entry) =>
       entry.appNames
         .map((name) => name.toLowerCase())
-        .includes(child.processName.toLowerCase())
+        .some((name) => possibleAppNames.includes(name))
     );
 
-    if (!entry)
-      entry = iconMap.find((entry) =>
-        entry.appNames
-          .map((name) => name.toLowerCase())
-          .includes(child.title.toLowerCase())
-      );
-    return entry
-      ? (entry!.iconName ?? "")
-      : `ti-brand-${child.processName.toLowerCase()}`;
+    return entry?.iconName ?? `ti-brand-${child.processName.toLowerCase()}`;
   };
 
   let glazewmOutput = $state<GlazeWmOutput>();
