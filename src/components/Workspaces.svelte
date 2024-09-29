@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { init } from "zebar";
+  import * as zebarCtx from "zebar";
   import Button from "./Button.svelte";
   import type { Window } from "glazewm";
   import { onMount } from "svelte";
@@ -25,9 +25,8 @@
   };
 
   let glazewmOutput = $state<GlazeWmOutput>();
-  onMount(async () => {
-    const zebarCtx = await init();
-    const glazewm = await zebarCtx.createProvider({ type: "glazewm" });
+  onMount(() => {
+    const glazewm = zebarCtx.createProvider({ type: "glazewm" });
     glazewm.onOutput((output) => (glazewmOutput = output));
   });
 </script>
