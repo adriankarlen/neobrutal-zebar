@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import * as zebarCtx from "zebar":
+  import * as zebarCtx from "zebar";
   import Button from "./Button.svelte";
   import Meter from "./Meter.svelte";
   import type {
