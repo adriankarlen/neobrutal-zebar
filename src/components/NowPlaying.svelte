@@ -1,13 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { init } from "zebar";
+  import * as zebarCtx from "zebar";
   import type { GlazeWmOutput } from "../types/providers";
 
   let glazewmOutput = $state<GlazeWmOutput>();
 
-  onMount(async () => {
-    const zebarCtx = await init();
-    const glazewm = await zebarCtx.createProvider({ type: "glazewm" });
+  onMount(() => {
+    const glazewm = zebarCtx.createProvider({ type: "glazewm" });
     glazewm.onOutput((output) => (glazewmOutput = output));
   });
 </script>
