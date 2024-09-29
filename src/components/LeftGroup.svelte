@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { init } from "zebar";
+  import * as zebarCtx from "zebar":
   import Button from "./Button.svelte";
   import Meter from "./Meter.svelte";
   import type {
@@ -13,14 +13,10 @@
   let batteryOutput = $state<BatteryOutput>();
   let memoryOutput = $state<MemoryOutput>();
 
-  onMount(async () => {
-    const zebarCtx = await init();
-
-    const [cpu, battery, memory] = await Promise.all([
-      zebarCtx.createProvider({ type: "cpu" }),
-      zebarCtx.createProvider({ type: "battery" }),
-      zebarCtx.createProvider({ type: "memory" })
-    ]);
+  onMount(() => {
+     const cpu = zebarCtx.createProvider({ type: "cpu" });
+     const battery = zebarCtx.createProvider({ type: "battery" });
+     const memory = zebarCtx.createProvider({ type: "memory" });
 
     cpu.onOutput((output) => (cpuOutput = output));
     battery.onOutput((output) => (batteryOutput = output));
