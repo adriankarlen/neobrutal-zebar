@@ -12,14 +12,10 @@
   let networkOutput = $state<NetworkOutput>();
   let weatherOutput = $state<WeatherOutput>();
 
-  onMount(async () => {
-    const zebarCtx = await init();
-
-    const [date, network, weather] = await Promise.all([
-      zebarCtx.createProvider({ type: "date", formatting: "HH:mm" }),
-      zebarCtx.createProvider({ type: "network" }),
-      zebarCtx.createProvider({ type: "weather", refreshInterval: 10000 })
-    ]);
+  onMount(() => {
+    const date = zebarCtx.createProvider({ type: "date", formatting: "HH:mm" });
+    const network = zebarCtx.createProvider({ type: "network" });
+    const weather = zebarCtx.createProvider({ type: "date", refreshInterval: 10000 });
 
     date.onOutput((output) => (dateOutput = output));
     network.onOutput((output) => (networkOutput = output));
