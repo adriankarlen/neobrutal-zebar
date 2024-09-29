@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { init } from "zebar";
+  import * as zebarCtx from "zebar";
   import type {
     DateOutput,
     NetworkOutput,
