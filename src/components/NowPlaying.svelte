@@ -5,7 +5,7 @@
 
   let glazewmOutput = $state<GlazeWmOutput>();
 
-  onMount(async () => {
+  onMount(() => {
     const glazewm = zebarCtx.createProvider({ type: "glazewm" });
     glazewm.onOutput((output) => (glazewmOutput = output));
   });
