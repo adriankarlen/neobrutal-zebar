@@ -1,7 +1,7 @@
 # 🟦 Neobrutal [Zebar](https://github.com/glzr-io/zebar)
 
 An Zebar configuration for Zebar V2 build in Svelte with Tailwind. If you are
-still using V1 of Zebar the old config is available in the [V1 branch](https://github.com/adriankarlen/neobrutal-zebar/tree/v1). 
+still using V1 of Zebar the old config is available in the [V1 branch](https://github.com/adriankarlen/neobrutal-zebar/tree/v1).
 
 ## ✨ Features
 
@@ -21,6 +21,7 @@ still using V1 of Zebar the old config is available in the [V1 branch](https://g
 ### Fullscreen
 
 ![image](https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/fullscreen.png)
+
 ### Workspaces
 
 https://github.com/user-attachments/assets/38e4a09f-1583-4e2a-84e5-6da7156402b2
@@ -34,74 +35,81 @@ https://github.com/user-attachments/assets/185f238c-03b8-4f63-87a2-2d36d6b31039
 ### Simple installation (using defaults)
 
 Download the `neobrutal-zebar.zip` from the latest release. Unzip the contents
-inside your zebar config directory.
+inside your zebar config directory. Adjust the `config.css` as needed.
 
 > [!NOTE]
 > If you are using window scaling in windows, you might need to edit
 > `bar.zebar.json` to get a correct height (default is `60px`).
 
-### Advanced installation (allows for customization)
+### Advanced installation (building from source)
 
 #### Prerequisites
 
 - Package manager/runtime of your choice (`bun` (recommended), `npm`, `pnpm`, `yarn`, etc). I am
-   using `bun` so onwards I will show how to use that.
+  using `bun` so onwards I will show how to use that.
 
 #### Instructions
+
 1. Download the repo and unzip it inside you zebar configuration directory
 2. Edit your Zebar `settings.json` to point to the neobrutal directory + `/build/index.html`. Example: `neobrutal-zebar/build/index.html`
 3. Navigate to the root dir of neobrutal-zebar.
 4. Run a install command for your selected package manager.
-    ```bash
-    bun install
-    ```
-5. Make any edits you want (see [Themes](#Themes) and [Recipies](#Recipies)  )
+   ```bash
+   bun install
+   ```
+5. Make any edits you want (see [Themes](#Themes) and [Recipies](#Recipies) )
 6. Build the project
-    ```bash
-    bun run build
-    ```
+   ```bash
+   bun run build
+   ```
 7. Launch Zebar
 
-In `src/app.css` there exists a lot of configuration available to tweak.
+In `config.css` there exists a lot of configuration available to tweak.
 
 ## 🎨 Themes
 
+Neobrutal currently ships with 4 different themes, Rosé Pine, Catppuccin, Nord
+and Material. Below follows some examples.
+
 ### 🌷Rosé Pine (default)
+
 <details>
 <summary>Example config</summary>
 
-##### src/app.css
+##### config.css
+
 ```css
 /* colors */
---text: var(--rp-text);
---bg: var(--rp-overlay);
---border: var(--rp-highlight-low);
---shadow: var(--rp-highlight-low);
---icon: var(--rp-love);
---memory: var(--rp-iris);
---cpu: var(--rp-rose);
---cpu-high-usage: var(--rp-love);
---battery-good: var(--rp-pine);
---battery-mid: var(--rp-gold);
---battery-low: var(--rp-love);
---focused-process: var(--rp-text);
---process: var(--rp-muted);
---displayed: var(--rp-text);
---ws-1: var(--rp-gold);
---ws-2: var(--rp-love);
---ws-3: var(--rp-pine);
---ws-4: var(--rp-foam);
---ws-5: var(--rp-iris);
---tiling-direction: var(--rp-rose);
---not-playing: var(--rp-love);
---now-playing: var(--rp-pine);
---network: var(--rp-text);
---weather: var(--rp-text);
+--text: var(--rp-text-hsl);
+--bg: var(--rp-overlay-hsl);
+--border: var(--rp-highlight-low-hsl);
+--shadow: var(--rp-highlight-low-hsl);
+--icon: var(--rp-love-hsl);
+--memory: var(--rp-iris-hsl);
+--cpu: var(--rp-rose-hsl);
+--cpu-high-usage: var(--rp-love-hsl);
+--battery-good: var(--rp-pine-hsl);
+--battery-mid: var(--rp-gold-hsl);
+--battery-low: var(--rp-love-hsl);
+--focused-process: var(--rp-text-hsl);
+--process: var(--rp-muted-hsl);
+--displayed: var(--rp-text-hsl);
+--ws-1: var(--rp-gold-hsl);
+--ws-2: var(--rp-love-hsl);
+--ws-3: var(--rp-pine-hsl);
+--ws-4: var(--rp-foam-hsl);
+--ws-5: var(--rp-iris-hsl);
+--tiling-direction: var(--rp-rose-hsl);
+--not-playing: var(--rp-love-hsl);
+--now-playing: var(--rp-pine-hsl);
+--network: var(--rp-text-hsl);
+--weather: var(--rp-text-hsl);
 ```
 
 </details>
 
 ### 😸 Catppuccin
+
 <img src="https://github.com/adriankarlen/neobrutal-zebar/blob/main/misc/catppuccin.png" />
 
 Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/docs/css.md), configure css variables accoriding to your liking.
@@ -109,7 +117,8 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 <details>
 <summary>Config show in picture above</summary>
 
-##### src/app.css
+##### config.css
+
 ```css
 /* border */
 --radius: 9999px;
@@ -147,12 +156,14 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 ```
 
 ##### src/components/RightGroup.svelte
+
 ```svelte
 <!-- replace this line -->
 <Button class="text-zb-icon" iconClass="heart-filled" />
 <!-- with this line -->
 <Button class="text-zb-icon" iconClass="cat" />
 ```
+
 </details>
 
 ## 🍳 Recipies
