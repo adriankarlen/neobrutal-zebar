@@ -47,7 +47,7 @@
     <div class="flex items-center gap-1">
       {#if glazewm.focusedWorkspace}
         {#each glazewm.focusedWorkspace!.children as child}
-          {#if "state" in child && child.state?.type != "minimized"}
+          {#if child.type == "window" && child.state.type != "minimized"}
             {@const icon = getProcessIcon(child as Window)}
             {#if icon}
               <span
