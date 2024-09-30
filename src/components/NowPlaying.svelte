@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { GlazeWmOutput } from "../types/providers";
+  import type { GlazeWmOutput } from "zebar";
 
-  let { glazewm } : { glazewm: GlazeWmOutput | null}= $props()
+  let { glazewm } : { glazewm: GlazeWmOutput }= $props()
 </script>
 
 {#if glazewm}
