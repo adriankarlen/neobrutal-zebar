@@ -1,0 +1,45 @@
+:root {
+  /* sizes */
+  --height: 2.5rem;
+  --bar-margin-y: 0.625rem;
+  --bar-margin-x: 1.25rem;
+
+  /* fonts */
+  --font-family: "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+
+  /* border */
+  --border-size: 0.125rem;
+  --radius: 0.25rem;
+
+  /* shadow */
+  --shadow-size-bar: 0.25rem;
+  --shadow-size-button: 0.125rem;
+
+  /* colors */
+  --text: var(--rp-moon-text-hsl);
+  --bg: var(--rp-moon-overlay-hsl);
+  --border: var(--rp-moon-highlight-low-hsl);
+  --shadow: var(--rp-moon-highlight-low-hsl);
+  --icon: var(--rp-moon-love-hsl);
+  --memory: var(--rp-moon-iris-hsl);
+  --cpu: var(--rp-moon-rose-hsl);
+  --cpu-high-usage: var(--rp-moon-love-hsl);
+  --battery-good: var(--rp-moon-pine-hsl);
+  --battery-mid: var(--rp-moon-gold-hsl);
+  --battery-low: var(--rp-moon-love-hsl);
+  --focused-process: var(--rp-moon-text-hsl);
+  --process: var(--rp-moon-muted-hsl);
+  --displayed: var(--rp-moon-text-hsl);
+  --ws-1: var(--rp-moon-gold-hsl);
+  --ws-2: var(--rp-moon-love-hsl);
+  --ws-3: var(--rp-moon-pine-hsl);
+  --ws-4: var(--rp-moon-foam-hsl);
+  --ws-5: var(--rp-moon-iris-hsl);
+  --tiling-direction: var(--rp-moon-rose-hsl);
+  --not-playing: var(--rp-moon-love-hsl);
+  --now-playing: var(--rp-moon-pine-hsl);
+  --network: var(--rp-moon-text-hsl);
+  --weather: var(--rp-moon-text-hsl);
+}

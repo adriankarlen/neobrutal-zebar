@@ -9,52 +9,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* sizes */
-  --height: 2.5rem;
-  --bar-margin-y: 0.625rem;
-  --bar-margin-x: 1.25rem;
-
-  /* fonts */
-  --font-family: "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
-  --font-size: 16px;
-  --font-weight: 500;
-
-  /* border */
-  --border-size: 0.125rem;
-  --radius: 0.25rem;
-
-  /* shadow */
-  --shadow-size-bar: 0.25rem;
-  --shadow-size-button: 0.125rem;
-
-  /* colors */
-  --text: var(--rp-text-hsl);
-  --bg: var(--rp-overlay-hsl);
-  --border: var(--rp-highlight-low-hsl);
-  --shadow: var(--rp-highlight-low-hsl);
-  --icon: var(--rp-love-hsl);
-  --memory: var(--rp-iris-hsl);
-  --cpu: var(--rp-rose-hsl);
-  --cpu-high-usage: var(--rp-love-hsl);
-  --battery-good: var(--rp-pine-hsl);
-  --battery-mid: var(--rp-gold-hsl);
-  --battery-low: var(--rp-love-hsl);
-  --focused-process: var(--rp-text-hsl);
-  --process: var(--rp-muted-hsl);
-  --displayed: var(--rp-text-hsl);
-  --ws-1: var(--rp-gold-hsl);
-  --ws-2: var(--rp-love-hsl);
-  --ws-3: var(--rp-pine-hsl);
-  --ws-4: var(--rp-foam-hsl);
-  --ws-5: var(--rp-iris-hsl);
-  --tiling-direction: var(--rp-rose-hsl);
-  --not-playing: var(--rp-love-hsl);
-  --now-playing: var(--rp-pine-hsl);
-  --network: var(--rp-text-hsl);
-  --weather: var(--rp-text-hsl);
-}
-
 @layer base {
   body {
     overflow: hidden;
