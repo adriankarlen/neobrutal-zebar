@@ -1,11 +1,11 @@
 <script lang="ts">
-  import * as zebarCtx from "zebar";
-  import Button from "./Button.svelte";
   import type { Window } from "glazewm";
-  import { onMount } from "svelte";
-  import type { GlazeWmOutput } from "../types/providers";
+  import type { GlazeWmOutput } from "zebar";
+
   import iconMap from "$lib/icon_map.json";
   import ignoredApps from "$lib/ignored_apps.json";
+
+  import Button from "./Button.svelte";
 
   const getProcessIcon = (child: Window) => {
     const possibleAppNames = [
@@ -24,32 +24,29 @@
     return entry?.iconName ?? `ti-brand-${child.processName.toLowerCase()}`;
   };
 
-  let glazewmOutput = $state<GlazeWmOutput>();
-  onMount(() => {
-    const glazewm = zebarCtx.createProvider({ type: "glazewm" });
-    glazewm.onOutput((output) => (glazewmOutput = output));
-  });
+  let { glazewm } : { glazewm: GlazeWmOutput}= $props()
 </script>
 
-{#if glazewmOutput}
+{#if glazewm}
   <div class="flex flex-row gap-2 items-center">
-    {#each glazewmOutput.currentWorkspaces as workspace, i}
+    {#each glazewm.currentWorkspaces as workspace, i}
       <Button
         iconClass="ti {workspace.hasFocus ? 'ti-point-filled' : 'ti-point'}"
         class="text-zb-ws-{i}"
         callback={() =>
-          glazewmOutput!.runCommand(`focus --workspace ${workspace.name}`)}
+          glazewm!.runCommand(`focus --workspace ${workspace.name}`)}
       />
     {/each}
     <button
+      aria-label="tiling-direction"
       class="flex items-center justify-center text-zb-tiling-direction"
-      onclick={() => glazewmOutput!.runCommand("toggle-tiling-direction")}
+      onclick={() => glazewm!.runCommand("toggle-tiling-direction")}
     >
-      <i class="ti ti-switch-{glazewmOutput?.tilingDirection}"></i>
+      <i class="ti ti-switch-{glazewm?.tilingDirection}"></i>
     </button>
     <div class="flex items-center gap-1">
-      {#if glazewmOutput.focusedWorkspace}
-        {#each glazewmOutput.focusedWorkspace!.children as child}
+      {#if glazewm.focusedWorkspace}
+        {#each glazewm.focusedWorkspace!.children as child}
           {#if "state" in child && child.state?.type != "minimized"}
             {@const icon = getProcessIcon(child as Window)}
             {#if icon}

@@ -1,19 +1,12 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import * as zebarCtx from "zebar";
   import type { GlazeWmOutput } from "../types/providers";
 
-  let glazewmOutput = $state<GlazeWmOutput>();
-
-  onMount(() => {
-    const glazewm = zebarCtx.createProvider({ type: "glazewm" });
-    glazewm.onOutput((output) => (glazewmOutput = output));
-  });
+  let { glazewm } : { glazewm: GlazeWmOutput | null}= $props()
 </script>
 
-{#if glazewmOutput}
+{#if glazewm}
   <div class="flex items-center gap-1">
-    {#each glazewmOutput.allWorkspaces as workspace}
+    {#each glazewm.allWorkspaces as workspace}
       {#each workspace.children as child}
         <!-- if the child has prop state, it is a window -->
         {#if "state" in child && child.processName.toLowerCase() === "spotify"}
