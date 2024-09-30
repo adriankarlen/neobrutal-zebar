@@ -1,0 +1,1106 @@
+/* https://m2.material.io/design/color/ */
+
+:root {
+    /* Red */
+    --md-red-50: #FFEBEE;
+    --md-red-50-rgb: 255, 235, 238;
+    --md-red-50-hsl: 0, 100%, 97%;
+
+    --md-red-100: #FFCDD2;
+    --md-red-100-rgb: 255, 205, 210;
+    --md-red-100-hsl: 0, 100%, 90%;
+
+    --md-red-200: #EF9A9A;
+    --md-red-200-rgb: 239, 154, 154;
+    --md-red-200-hsl: 0, 80%, 75%;
+
+    --md-red-300: #E57373;
+    --md-red-300-rgb: 229, 115, 115;
+    --md-red-300-hsl: 0, 70%, 65%;
+
+    --md-red-400: #EF5350;
+    --md-red-400-rgb: 239, 83, 80;
+    --md-red-400-hsl: 0, 78%, 59%;
+
+    --md-red-500: #F44336;
+    --md-red-500-rgb: 244, 67, 54;
+    --md-red-500-hsl: 0, 87%, 57%;
+
+    --md-red-600: #E53935;
+    --md-red-600-rgb: 229, 57, 53;
+    --md-red-600-hsl: 0, 81%, 53%;
+
+    --md-red-700: #D32F2F;
+    --md-red-700-rgb: 211, 47, 47;
+    --md-red-700-hsl: 0, 74%, 47%;
+
+    --md-red-800: #C62828;
+    --md-red-800-rgb: 198, 40, 40;
+    --md-red-800-hsl: 0, 74%, 39%;
+
+    --md-red-900: #B71C1C;
+    --md-red-900-rgb: 183, 28, 28;
+    --md-red-900-hsl: 0, 75%, 36%;
+
+    --md-red-a100: #FF8A80;
+    --md-red-a100-rgb: 255, 138, 128;
+    --md-red-a100-hsl: 0, 100%, 73%;
+
+    --md-red-a200: #FF5252;
+    --md-red-a200-rgb: 255, 82, 82;
+    --md-red-a200-hsl: 0, 100%, 63%;
+
+    --md-red-a400: #FF1744;
+    --md-red-a400-rgb: 255, 23, 68;
+    --md-red-a400-hsl: 0, 100%, 53%;
+
+    --md-red-a700: #D50000;
+    --md-red-a700-rgb: 213, 0, 0;
+    --md-red-a700-hsl: 0, 100%, 42%;
+
+    /* Pink */
+    --md-pink-50: #FCE4EC;
+    --md-pink-50-rgb: 252, 228, 236;
+    --md-pink-50-hsl: 350, 100%, 97%;
+
+    --md-pink-100: #F8BBD0;
+    --md-pink-100-rgb: 248, 187, 208;
+    --md-pink-100-hsl: 340, 100%, 90%;
+
+    --md-pink-200: #F48FB1;
+    --md-pink-200-rgb: 244, 143, 177;
+    --md-pink-200-hsl: 340, 80%, 74%;
+
+    --md-pink-300: #F06292;
+    --md-pink-300-rgb: 240, 98, 146;
+    --md-pink-300-hsl: 340, 85%, 65%;
+
+    --md-pink-400: #EC407A;
+    --md-pink-400-rgb: 236, 64, 122;
+    --md-pink-400-hsl: 340, 75%, 57%;
+
+    --md-pink-500: #E91E63;
+    --md-pink-500-rgb: 233, 30, 99;
+    --md-pink-500-hsl: 340, 80%, 46%;
+
+    --md-pink-600: #D81B60;
+    --md-pink-600-rgb: 216, 27, 96;
+    --md-pink-600-hsl: 340, 75%, 42%;
+
+    --md-pink-700: #C2185B;
+    --md-pink-700-rgb: 194, 24, 91;
+    --md-pink-700-hsl: 340, 77%, 38%;
+
+    --md-pink-800: #AD1457;
+    --md-pink-800-rgb: 173, 20, 87;
+    --md-pink-800-hsl: 340, 76%, 37%;
+
+    --md-pink-900: #880E4F;
+    --md-pink-900-rgb: 136, 14, 79;
+    --md-pink-900-hsl: 340, 73%, 31%;
+
+    --md-pink-a100: #FF80AB;
+    --md-pink-a100-rgb: 255, 128, 171;
+    --md-pink-a100-hsl: 340, 100%, 73%;
+
+    --md-pink-a200: #FF4081;
+    --md-pink-a200-rgb: 255, 64, 129;
+    --md-pink-a200-hsl: 340, 100%, 63%;
+
+    --md-pink-a400: #F50057;
+    --md-pink-a400-rgb: 245, 0, 87;
+    --md-pink-a400-hsl: 340, 100%, 48%;
+
+    --md-pink-a700: #C51162;
+    --md-pink-a700-rgb: 197, 17, 98;
+    --md-pink-a700-hsl: 340, 82%, 43%;
+
+    /* Purple */
+    --md-purple-50: #F3E5F5;
+    --md-purple-50-rgb: 243, 229, 245;
+    --md-purple-50-hsl: 300, 50%, 96%;
+
+    --md-purple-100: #E1BEE7;
+    --md-purple-100-rgb: 225, 190, 231;
+    --md-purple-100-hsl: 300, 39%, 88%;
+
+    --md-purple-200: #CE93D8;
+    --md-purple-200-rgb: 206, 147, 216;
+    --md-purple-200-hsl: 300, 35%, 76%;
+
+    --md-purple-300: #BA68C8;
+    --md-purple-300-rgb: 186, 104, 200;
+    --md-purple-300-hsl: 300, 39%, 66%;
+
+    --md-purple-400: #AB47BC;
+    --md-purple-400-rgb: 171, 71, 188;
+    --md-purple-400-hsl: 300, 35%, 56%;
+
+    --md-purple-500: #9C27B0;
+    --md-purple-500-rgb: 156, 39, 176;
+    --md-purple-500-hsl: 300, 54%, 46%;
+
+    --md-purple-600: #8E24AA;
+    --md-purple-600-rgb: 142, 36, 170;
+    --md-purple-600-hsl: 300, 57%, 41%;
+
+    --md-purple-700: #7B1FA2;
+    --md-purple-700-rgb: 123, 31, 162;
+    --md-purple-700-hsl: 300, 59%, 39%;
+
+    --md-purple-800: #6A1B9A;
+    --md-purple-800-rgb: 106, 27, 154;
+    --md-purple-800-hsl: 300, 60%, 36%;
+
+    --md-purple-900: #4A148C;
+    --md-purple-900-rgb: 74, 20, 140;
+    --md-purple-900-hsl: 300, 73%, 31%;
+
+    --md-purple-a100: #EA80FC;
+    --md-purple-a100-rgb: 234, 128, 252;
+    --md-purple-a100-hsl: 300, 85%, 74%;
+
+    --md-purple-a200: #E040FB;
+    --md-purple-a200-rgb: 224, 64, 251;
+    --md-purple-a200-hsl: 300, 100%, 56%;
+
+    --md-purple-a400: #D5006D;
+    --md-purple-a400-rgb: 213, 0, 109;
+    --md-purple-a400-hsl: 300, 100%, 42%;
+
+    --md-purple-a700: #AA00B6;
+    --md-purple-a700-rgb: 170, 0, 182;
+    --md-purple-a700-hsl: 300, 100%, 33%;
+
+    /* Deep Purple */
+    --md-deep-purple-50: #EDE7F6;
+    --md-deep-purple-50-rgb: 237, 231, 246;
+    --md-deep-purple-50-hsl: 240, 50%, 96%;
+
+    --md-deep-purple-100: #D1C4E9;
+    --md-deep-purple-100-rgb: 209, 196, 233;
+    --md-deep-purple-100-hsl: 240, 25%, 88%;
+
+    --md-deep-purple-200: #B39DDB;
+    --md-deep-purple-200-rgb: 179, 157, 219;
+    --md-deep-purple-200-hsl: 240, 27%, 76%;
+
+    --md-deep-purple-300: #9575CD;
+    --md-deep-purple-300-rgb: 149, 117, 205;
+    --md-deep-purple-300-hsl: 240, 34%, 66%;
+
+    --md-deep-purple-400: #7E57C2;
+    --md-deep-purple-400-rgb: 126, 87, 194;
+    --md-deep-purple-400-hsl: 240, 34%, 56%;
+
+    --md-deep-purple-500: #673AB7;
+    --md-deep-purple-500-rgb: 103, 58, 183;
+    --md-deep-purple-500-hsl: 240, 50%, 47%;
+
+    --md-deep-purple-600: #5E35B1;
+    --md-deep-purple-600-rgb: 94, 53, 177;
+    --md-deep-purple-600-hsl: 240, 52%, 41%;
+
+    --md-deep-purple-700: #512DA8;
+    --md-deep-purple-700-rgb: 81, 45, 168;
+    --md-deep-purple-700-hsl: 240, 53%, 37%;
+
+    --md-deep-purple-800: #4527A0;
+    --md-deep-purple-800-rgb: 69, 39, 160;
+    --md-deep-purple-800-hsl: 240, 54%, 34%;
+
+    --md-deep-purple-900: #311B92;
+    --md-deep-purple-900-rgb: 49, 27, 146;
+    --md-deep-purple-900-hsl: 240, 64%, 31%;
+
+    --md-deep-purple-a100: #B388FF;
+    --md-deep-purple-a100-rgb: 179, 136, 255;
+    --md-deep-purple-a100-hsl: 240, 100%, 74%;
+
+    --md-deep-purple-a200: #7C4DFF;
+    --md-deep-purple-a200-rgb: 124, 77, 255;
+    --md-deep-purple-a200-hsl: 240, 100%, 56%;
+
+    --md-deep-purple-a400: #651FFF;
+    --md-deep-purple-a400-rgb: 101, 31, 255;
+    --md-deep-purple-a400-hsl: 240, 100%, 48%;
+
+    --md-deep-purple-a700: #6200EA;
+    --md-deep-purple-a700-rgb: 98, 0, 234;
+    --md-deep-purple-a700-hsl: 240, 100%, 45%;
+
+    /* Indigo */
+    --md-indigo-50: #E8EAF6;
+    --md-indigo-50-rgb: 232, 234, 246;
+    --md-indigo-50-hsl: 210, 40%, 96%;
+
+    --md-indigo-100: #C5CAE9;
+    --md-indigo-100-rgb: 197, 202, 233;
+    --md-indigo-100-hsl: 210, 28%, 88%;
+
+    --md-indigo-200: #9FA8DA;
+    --md-indigo-200-rgb: 159, 168, 218;
+    --md-indigo-200-hsl: 210, 26%, 74%;
+
+    --md-indigo-300: #7986CB;
+    --md-indigo-300-rgb: 121, 134, 203;
+    --md-indigo-300-hsl: 210, 26%, 65%;
+
+    --md-indigo-400: #5C6BC0;
+    --md-indigo-400-rgb: 92, 107, 192;
+    --md-indigo-400-hsl: 210, 26%, 55%;
+
+    --md-indigo-500: #3F51B5;
+    --md-indigo-500-rgb: 63, 81, 181;
+    --md-indigo-500-hsl: 210, 48%, 45%;
+
+    --md-indigo-600: #3949AB;
+    --md-indigo-600-rgb: 57, 73, 171;
+    --md-indigo-600-hsl: 210, 49%, 42%;
+
+    --md-indigo-700: #303F9F;
+    --md-indigo-700-rgb: 48, 63, 159;
+    --md-indigo-700-hsl: 210, 50%, 37%;
+
+    --md-indigo-800: #283593;
+    --md-indigo-800-rgb: 40, 53, 147;
+    --md-indigo-800-hsl: 210, 52%, 34%;
+
+    --md-indigo-900: #1A237E;
+    --md-indigo-900-rgb: 26, 35, 126;
+    --md-indigo-900-hsl: 210, 58%, 29%;
+
+    --md-indigo-a100: #8C9EFF;
+    --md-indigo-a100-rgb: 140, 158, 255;
+    --md-indigo-a100-hsl: 210, 100%, 74%;
+
+    --md-indigo-a200: #536DFE;
+    --md-indigo-a200-rgb: 83, 109, 254;
+    --md-indigo-a200-hsl: 210, 100%, 54%;
+
+    --md-indigo-a400: #3D5AFE;
+    --md-indigo-a400-rgb: 61, 90, 254;
+    --md-indigo-a400-hsl: 210, 100%, 48%;
+
+    --md-indigo-a700: #304FFE;
+    --md-indigo-a700-rgb: 48, 79, 254;
+    --md-indigo-a700-hsl: 210, 100%, 43%;
+
+    /* Blue */
+    --md-blue-50: #E3F2FD;
+    --md-blue-50-rgb: 227, 242, 253;
+    --md-blue-50-hsl: 210, 100%, 96%;
+
+    --md-blue-100: #BBDEFB;
+    --md-blue-100-rgb: 187, 222, 251;
+    --md-blue-100-hsl: 210, 100%, 90%;
+
+    --md-blue-200: #90CAF9;
+    --md-blue-200-rgb: 144, 202, 249;
+    --md-blue-200-hsl: 210, 100%, 79%;
+
+    --md-blue-300: #64B5F6;
+    --md-blue-300-rgb: 100, 181, 246;
+    --md-blue-300-hsl: 210, 100%, 70%;
+
+    --md-blue-400: #42A5F5;
+    --md-blue-400-rgb: 66, 165, 245;
+    --md-blue-400-hsl: 210, 100%, 61%;
+
+    --md-blue-500: #2196F3;
+    --md-blue-500-rgb: 33, 150, 243;
+    --md-blue-500-hsl: 210, 100%, 48%;
+
+    --md-blue-600: #1E88E5;
+    --md-blue-600-rgb: 30, 136, 229;
+    --md-blue-600-hsl: 210, 100%, 43%;
+
+    --md-blue-700: #1976D2;
+    --md-blue-700-rgb: 25, 118, 210;
+    --md-blue-700-hsl: 210, 100%, 41%;
+
+    --md-blue-800: #1565C0;
+    --md-blue-800-rgb: 21, 101, 192;
+    --md-blue-800-hsl: 210, 100%, 37%;
+
+    --md-blue-900: #0D47A1;
+    --md-blue-900-rgb: 13, 71, 161;
+    --md-blue-900-hsl: 210, 100%, 30%;
+
+    --md-blue-a100: #82B1FF;
+    --md-blue-a100-rgb: 130, 177, 255;
+    --md-blue-a100-hsl: 210, 100%, 73%;
+
+    --md-blue-a200: #448AFF;
+    --md-blue-a200-rgb: 68, 138, 255;
+    --md-blue-a200-hsl: 210, 100%, 54%;
+
+    --md-blue-a400: #2979FF;
+    --md-blue-a400-rgb: 41, 121, 255;
+    --md-blue-a400-hsl: 210, 100%, 45%;
+
+    --md-blue-a700: #2962FF;
+    --md-blue-a700-rgb: 41, 98, 255;
+    --md-blue-a700-hsl: 210, 100%, 43%;
+
+    /* Light Blue */
+    --md-light-blue-50: #E1F5FE;
+    --md-light-blue-50-rgb: 225, 245, 254;
+    --md-light-blue-50-hsl: 200, 100%, 96%;
+
+    --md-light-blue-100: #B3E5FC;
+    --md-light-blue-100-rgb: 179, 229, 252;
+    --md-light-blue-100-hsl: 200, 100%, 90%;
+
+    --md-light-blue-200: #81D4FA;
+    --md-light-blue-200-rgb: 129, 212, 250;
+    --md-light-blue-200-hsl: 200, 100%, 79%;
+
+    --md-light-blue-300: #4FC3F7;
+    --md-light-blue-300-rgb: 79, 195, 247;
+    --md-light-blue-300-hsl: 200, 100%, 70%;
+
+    --md-light-blue-400: #29B6F6;
+    --md-light-blue-400-rgb: 41, 182, 246;
+    --md-light-blue-400-hsl: 200, 100%, 61%;
+
+    --md-light-blue-500: #03A9F4;
+    --md-light-blue-500-rgb: 3, 169, 244;
+    --md-light-blue-500-hsl: 200, 100%, 48%;
+
+    --md-light-blue-600: #039BE5;
+    --md-light-blue-600-rgb: 3, 155, 229;
+    --md-light-blue-600-hsl: 200, 100%, 43%;
+
+    --md-light-blue-700: #0288D1;
+    --md-light-blue-700-rgb: 2, 136, 209;
+    --md-light-blue-700-hsl: 200, 100%, 41%;
+
+    --md-light-blue-800: #0277BD;
+    --md-light-blue-800-rgb: 2, 119, 189;
+    --md-light-blue-800-hsl: 200, 100%, 37%;
+
+    --md-light-blue-900: #01579B;
+    --md-light-blue-900-rgb: 1, 87, 155;
+    --md-light-blue-900-hsl: 200, 100%, 30%;
+
+    --md-light-blue-a100: #80D8FF;
+    --md-light-blue-a100-rgb: 128, 216, 255;
+    --md-light-blue-a100-hsl: 200, 100%, 73%;
+
+    --md-light-blue-a200: #40C4FF;
+    --md-light-blue-a200-rgb: 64, 196, 255;
+    --md-light-blue-a200-hsl: 200, 100%, 54%;
+
+    --md-light-blue-a400: #00B0FF;
+    --md-light-blue-a400-rgb: 0, 176, 255;
+    --md-light-blue-a400-hsl: 200, 100%, 45%;
+
+    --md-light-blue-a700: #0091EA;
+    --md-light-blue-a700-rgb: 0, 145, 234;
+    --md-light-blue-a700-hsl: 200, 100%, 43%;
+
+    /* Cyan */
+    --md-cyan-50: #E0F7FA;
+    --md-cyan-50-rgb: 224, 247, 250;
+    --md-cyan-50-hsl: 180, 100%, 96%;
+
+    --md-cyan-100: #B2EBF2;
+    --md-cyan-100-rgb: 178, 235, 242;
+    --md-cyan-100-hsl: 180, 100%, 90%;
+
+    --md-cyan-200: #80DEEA;
+    --md-cyan-200-rgb: 128, 222, 234;
+    --md-cyan-200-hsl: 180, 100%, 79%;
+
+    --md-cyan-300: #4DD0E1;
+    --md-cyan-300-rgb: 77, 208, 225;
+    --md-cyan-300-hsl: 180, 100%, 70%;
+
+    --md-cyan-400: #26C6DA;
+    --md-cyan-400-rgb: 38, 198, 218;
+    --md-cyan-400-hsl: 180, 100%, 61%;
+
+    --md-cyan-500: #00BCD4;
+    --md-cyan-500-rgb: 0, 188, 212;
+    --md-cyan-500-hsl: 180, 100%, 48%;
+
+    --md-cyan-600: #00ACC1;
+    --md-cyan-600-rgb: 0, 172, 193;
+    --md-cyan-600-hsl: 180, 100%, 43%;
+
+    --md-cyan-700: #0097A7;
+    --md-cyan-700-rgb: 0, 151, 167;
+    --md-cyan-700-hsl: 180, 100%, 41%;
+
+    --md-cyan-800: #00838F;
+    --md-cyan-800-rgb: 0, 131, 143;
+    --md-cyan-800-hsl: 180, 100%, 37%;
+
+    --md-cyan-900: #006064;
+    --md-cyan-900-rgb: 0, 96, 100;
+    --md-cyan-900-hsl: 180, 100%, 31%;
+
+    --md-cyan-a100: #84FFFF;
+    --md-cyan-a100-rgb: 132, 255, 255;
+    --md-cyan-a100-hsl: 180, 100%, 73%;
+
+    --md-cyan-a200: #18FFFF;
+    --md-cyan-a200-rgb: 24, 255, 255;
+    --md-cyan-a200-hsl: 180, 100%, 54%;
+
+    --md-cyan-a400: #00E5FF;
+    --md-cyan-a400-rgb: 0, 229, 255;
+    --md-cyan-a400-hsl: 180, 100%, 45%;
+
+    --md-cyan-a700: #00B8D4;
+    --md-cyan-a700-rgb: 0, 184, 212;
+    --md-cyan-a700-hsl: 180, 100%, 43%;
+
+    /* Teal */
+    --md-teal-50: #E0F2F1;
+    --md-teal-50-rgb: 224, 242, 241;
+    --md-teal-50-hsl: 180, 100%, 96%;
+
+    --md-teal-100: #B2DFDB;
+    --md-teal-100-rgb: 178, 223, 219;
+    --md-teal-100-hsl: 180, 100%, 90%;
+
+    --md-teal-200: #80CBC4;
+    --md-teal-200-rgb: 128, 203, 196;
+    --md-teal-200-hsl: 180, 100%, 79%;
+
+    --md-teal-300: #4DB6AC;
+    --md-teal-300-rgb: 77, 182, 172;
+    --md-teal-300-hsl: 180, 100%, 70%;
+
+    --md-teal-400: #26A69A;
+    --md-teal-400-rgb: 38, 166, 154;
+    --md-teal-400-hsl: 180, 100%, 61%;
+
+    --md-teal-500: #009688;
+    --md-teal-500-rgb: 0, 150, 136;
+    --md-teal-500-hsl: 180, 100%, 48%;
+
+    --md-teal-600: #00897B;
+    --md-teal-600-rgb: 0, 137, 123;
+    --md-teal-600-hsl: 180, 100%, 43%;
+
+    --md-teal-700: #00796B;
+    --md-teal-700-rgb: 0, 121, 107;
+    --md-teal-700-hsl: 180, 100%, 41%;
+
+    --md-teal-800: #00695C;
+    --md-teal-800-rgb: 0, 105, 92;
+    --md-teal-800-hsl: 180, 100%, 37%;
+
+    --md-teal-900: #004D40;
+    --md-teal-900-rgb: 0, 77, 64;
+    --md-teal-900-hsl: 180, 100%, 30%;
+
+    --md-teal-a100: #A7FFEB;
+    --md-teal-a100-rgb: 167, 255, 235;
+    --md-teal-a100-hsl: 180, 100%, 73%;
+
+    --md-teal-a200: #64FFDA;
+    --md-teal-a200-rgb: 100, 255, 218;
+    --md-teal-a200-hsl: 180, 100%, 54%;
+
+    --md-teal-a400: #1DE9B6;
+    --md-teal-a400-rgb: 29, 233, 182;
+    --md-teal-a400-hsl: 180, 100%, 45%;
+
+    --md-teal-a700: #00BFAE;
+    --md-teal-a700-rgb: 0, 191, 174;
+    --md-teal-a700-hsl: 180, 100%, 43%;
+
+    /* Green */
+    --md-green-50: #E8F5E9;
+    --md-green-50-rgb: 232, 245, 233;
+    --md-green-50-hsl: 120, 100%, 96%;
+
+    --md-green-100: #C8E6C9;
+    --md-green-100-rgb: 200, 230, 201;
+    --md-green-100-hsl: 120, 100%, 90%;
+
+    --md-green-200: #A5D6A7;
+    --md-green-200-rgb: 165, 214, 167;
+    --md-green-200-hsl: 120, 100%, 79%;
+
+    --md-green-300: #81C784;
+    --md-green-300-rgb: 129, 199, 132;
+    --md-green-300-hsl: 120, 100%, 70%;
+
+    --md-green-400: #66BB6A;
+    --md-green-400-rgb: 102, 187, 106;
+    --md-green-400-hsl: 120, 100%, 61%;
+
+    --md-green-500: #4CAF50;
+    --md-green-500-rgb: 76, 175, 80;
+    --md-green-500-hsl: 120, 100%, 48%;
+
+    --md-green-600: #43A047;
+    --md-green-600-rgb: 67, 160, 71;
+    --md-green-600-hsl: 120, 100%, 43%;
+
+    --md-green-700: #388E3C;
+    --md-green-700-rgb: 56, 142, 60;
+    --md-green-700-hsl: 120, 100%, 41%;
+
+    --md-green-800: #2E7D32;
+    --md-green-800-rgb: 46, 125, 50;
+    --md-green-800-hsl: 120, 100%, 37%;
+
+    --md-green-900: #1B5E20;
+    --md-green-900-rgb: 27, 94, 32;
+    --md-green-900-hsl: 120, 100%, 30%;
+
+    --md-green-a100: #B9FBC0;
+    --md-green-a100-rgb: 185, 251, 192;
+    --md-green-a100-hsl: 120, 100%, 73%;
+
+    --md-green-a200: #69F0AE;
+    --md-green-a200-rgb: 105, 240, 174;
+    --md-green-a200-hsl: 120, 100%, 54%;
+
+    --md-green-a400: #00E676;
+    --md-green-a400-rgb: 0, 230, 118;
+    --md-green-a400-hsl: 120, 100%, 45%;
+
+    --md-green-a700: #00C853;
+    --md-green-a700-rgb: 0, 200, 83;
+    --md-green-a700-hsl: 120, 100%, 43%;
+
+    /* Light Green */
+    --md-light-green-50: #F1F8E9;
+    --md-light-green-50-rgb: 241, 248, 233;
+    --md-light-green-50-hsl: 90, 100%, 96%;
+
+    --md-light-green-100: #DCEDC8;
+    --md-light-green-100-rgb: 220, 237, 200;
+    --md-light-green-100-hsl: 90, 100%, 90%;
+
+    --md-light-green-200: #C5E1A5;
+    --md-light-green-200-rgb: 197, 225, 165;
+    --md-light-green-200-hsl: 90, 100%, 79%;
+
+    --md-light-green-300: #AED581;
+    --md-light-green-300-rgb: 174, 213, 129;
+    --md-light-green-300-hsl: 90, 100%, 70%;
+
+    --md-light-green-400: #9CCC65;
+    --md-light-green-400-rgb: 156, 204, 101;
+    --md-light-green-400-hsl: 90, 100%, 61%;
+
+    --md-light-green-500: #8BC34A;
+    --md-light-green-500-rgb: 139, 195, 74;
+    --md-light-green-500-hsl: 90, 100%, 48%;
+
+    --md-light-green-600: #7CB342;
+    --md-light-green-600-rgb: 124, 179, 66;
+    --md-light-green-600-hsl: 90, 100%, 43%;
+
+    --md-light-green-700: #689F38;
+    --md-light-green-700-rgb: 104, 159, 56;
+    --md-light-green-700-hsl: 90, 100%, 41%;
+
+    --md-light-green-800: #558B2F;
+    --md-light-green-800-rgb: 85, 139, 47;
+    --md-light-green-800-hsl: 90, 100%, 37%;
+
+    --md-light-green-900: #33691E;
+    --md-light-green-900-rgb: 51, 105, 30;
+    --md-light-green-900-hsl: 90, 100%, 30%;
+
+    --md-light-green-a100: #CCFF90;
+    --md-light-green-a100-rgb: 204, 255, 144;
+    --md-light-green-a100-hsl: 90, 100%, 73%;
+
+    --md-light-green-a200: #A5D6A7;
+    --md-light-green-a200-rgb: 165, 214, 167;
+    --md-light-green-a200-hsl: 90, 100%, 54%;
+
+    --md-light-green-a400: #76FF03;
+    --md-light-green-a400-rgb: 118, 255, 3;
+    --md-light-green-a400-hsl: 90, 100%, 45%;
+
+    --md-light-green-a700: #64DD17;
+    --md-light-green-a700-rgb: 100, 221, 23;
+    --md-light-green-a700-hsl: 90, 100%, 43%;
+
+    /* Lime */
+    --md-lime-50: #F9FBE7;
+    --md-lime-50-rgb: 249, 251, 231;
+    --md-lime-50-hsl: 60, 100%, 96%;
+
+    --md-lime-100: #F0F4C3;
+    --md-lime-100-rgb: 240, 244, 195;
+    --md-lime-100-hsl: 60, 100%, 90%;
+
+    --md-lime-200: #E6EE9C;
+    --md-lime-200-rgb: 230, 238, 156;
+    --md-lime-200-hsl: 60, 100%, 79%;
+
+    --md-lime-300: #DCE775;
+    --md-lime-300-rgb: 220, 231, 117;
+    --md-lime-300-hsl: 60, 100%, 70%;
+
+    --md-lime-400: #D4E157;
+    --md-lime-400-rgb: 212, 225, 87;
+    --md-lime-400-hsl: 60, 100%, 61%;
+
+    --md-lime-500: #CDDC39;
+    --md-lime-500-rgb: 205, 220, 57;
+    --md-lime-500-hsl: 60, 100%, 48%;
+
+    --md-lime-600: #C0CA33;
+    --md-lime-600-rgb: 192, 202, 51;
+    --md-lime-600-hsl: 60, 100%, 43%;
+
+    --md-lime-700: #A8B400;
+    --md-lime-700-rgb: 168, 180, 0;
+    --md-lime-700-hsl: 60, 100%, 41%;
+
+    --md-lime-800: #A4C639;
+    --md-lime-800-rgb: 164, 198, 57;
+    --md-lime-800-hsl: 60, 100%, 37%;
+
+    --md-lime-900: #7B9A00;
+    --md-lime-900-rgb: 123, 154, 0;
+    --md-lime-900-hsl: 60, 100%, 30%;
+
+    --md-lime-a100: #F4FF81;
+    --md-lime-a100-rgb: 244, 255, 129;
+    --md-lime-a100-hsl: 60, 100%, 73%;
+
+    --md-lime-a200: #EEFF41;
+    --md-lime-a200-rgb: 238, 255, 65;
+    --md-lime-a200-hsl: 60, 100%, 54%;
+
+    --md-lime-a400: #C6FF00;
+    --md-lime-a400-rgb: 198, 255, 0;
+    --md-lime-a400-hsl: 60, 100%, 45%;
+
+    --md-lime-a700: #AEEA00;
+    --md-lime-a700-rgb: 174, 234, 0;
+    --md-lime-a700-hsl: 60, 100%, 43%;
+
+    /* Yellow */
+    --md-yellow-50: #FFFDE7;
+    --md-yellow-50-rgb: 255, 253, 231;
+    --md-yellow-50-hsl: 54, 100%, 96%;
+
+    --md-yellow-100: #FFF9C4;
+    --md-yellow-100-rgb: 255, 249, 196;
+    --md-yellow-100-hsl: 54, 100%, 90%;
+
+    --md-yellow-200: #FFF59D;
+    --md-yellow-200-rgb: 255, 245, 157;
+    --md-yellow-200-hsl: 54, 100%, 79%;
+
+    --md-yellow-300: #FFF176;
+    --md-yellow-300-rgb: 255, 241, 118;
+    --md-yellow-300-hsl: 54, 100%, 70%;
+
+    --md-yellow-400: #FFEE58;
+    --md-yellow-400-rgb: 255, 238, 88;
+    --md-yellow-400-hsl: 54, 100%, 61%;
+
+    --md-yellow-500: #FFEB3B;
+    --md-yellow-500-rgb: 255, 235, 59;
+    --md-yellow-500-hsl: 54, 100%, 48%;
+
+    --md-yellow-600: #FDD835;
+    --md-yellow-600-rgb: 253, 216, 53;
+    --md-yellow-600-hsl: 54, 100%, 43%;
+
+    --md-yellow-700: #FBC02D;
+    --md-yellow-700-rgb: 251, 192, 45;
+    --md-yellow-700-hsl: 54, 100%, 41%;
+
+    --md-yellow-800: #F9A825;
+    --md-yellow-800-rgb: 249, 168, 37;
+    --md-yellow-800-hsl: 54, 100%, 37%;
+
+    --md-yellow-900: #F57F17;
+    --md-yellow-900-rgb: 245, 127, 23;
+    --md-yellow-900-hsl: 54, 100%, 30%;
+
+    --md-yellow-a100: #FFFF8D;
+    --md-yellow-a100-rgb: 255, 255, 141;
+    --md-yellow-a100-hsl: 54, 100%, 73%;
+
+    --md-yellow-a200: #FFE57F;
+    --md-yellow-a200-rgb: 255, 229, 127;
+    --md-yellow-a200-hsl: 54, 100%, 54%;
+
+    --md-yellow-a400: #FFD740;
+    --md-yellow-a400-rgb: 255, 215, 64;
+    --md-yellow-a400-hsl: 54, 100%, 45%;
+
+    --md-yellow-a700: #FFC400;
+    --md-yellow-a700-rgb: 255, 196, 0;
+    --md-yellow-a700-hsl: 54, 100%, 43%;
+
+    /* Amber */
+    --md-amber-50: #FFF8E1;
+    --md-amber-50-rgb: 255, 248, 225;
+    --md-amber-50-hsl: 54, 100%, 96%;
+
+    --md-amber-100: #FFEC40;
+    --md-amber-100-rgb: 255, 236, 64;
+    --md-amber-100-hsl: 54, 100%, 90%;
+
+    --md-amber-200: #FFE135;
+    --md-amber-200-rgb: 255, 225, 53;
+    --md-amber-200-hsl: 54, 100%, 79%;
+
+    --md-amber-300: #FFD740;
+    --md-amber-300-rgb: 255, 215, 64;
+    --md-amber-300-hsl: 54, 100%, 70%;
+
+    --md-amber-400: #FFC107;
+    --md-amber-400-rgb: 255, 193, 7;
+    --md-amber-400-hsl: 54, 100%, 61%;
+
+    --md-amber-500: #FFB300;
+    --md-amber-500-rgb: 255, 179, 0;
+    --md-amber-500-hsl: 54, 100%, 48%;
+
+    --md-amber-600: #FFA000;
+    --md-amber-600-rgb: 255, 160, 0;
+    --md-amber-600-hsl: 54, 100%, 43%;
+
+    --md-amber-700: #FF8F00;
+    --md-amber-700-rgb: 255, 143, 0;
+    --md-amber-700-hsl: 54, 100%, 41%;
+
+    --md-amber-800: #FF6F00;
+    --md-amber-800-rgb: 255, 111, 0;
+    --md-amber-800-hsl: 54, 100%, 37%;
+
+    --md-amber-900: #E65100;
+    --md-amber-900-rgb: 230, 81, 0;
+    --md-amber-900-hsl: 54, 100%, 30%;
+
+    --md-amber-a100: #FFE57F;
+    --md-amber-a100-rgb: 255, 229, 127;
+    --md-amber-a100-hsl: 54, 100%, 73%;
+
+    --md-amber-a200: #FFD740;
+    --md-amber-a200-rgb: 255, 215, 64;
+    --md-amber-a200-hsl: 54, 100%, 54%;
+
+    --md-amber-a400: #FFC400;
+    --md-amber-a400-rgb: 255, 196, 0;
+    --md-amber-a400-hsl: 54, 100%, 45%;
+
+    --md-amber-a700: #FFAB40;
+    --md-amber-a700-rgb: 255, 171, 64;
+    --md-amber-a700-hsl: 54, 100%, 43%;
+
+    /* Orange */
+    --md-orange-50: #FFF3E0;
+    --md-orange-50-rgb: 255, 243, 224;
+    --md-orange-50-hsl: 54, 100%, 96%;
+
+    --md-orange-100: #FFE0B2;
+    --md-orange-100-rgb: 255, 224, 178;
+    --md-orange-100-hsl: 54, 100%, 90%;
+
+    --md-orange-200: #FFCC80;
+    --md-orange-200-rgb: 255, 204, 128;
+    --md-orange-200-hsl: 54, 100%, 79%;
+
+    --md-orange-300: #FFB74D;
+    --md-orange-300-rgb: 255, 183, 77;
+    --md-orange-300-hsl: 54, 100%, 70%;
+
+    --md-orange-400: #FFA726;
+    --md-orange-400-rgb: 255, 167, 38;
+    --md-orange-400-hsl: 54, 100%, 61%;
+
+    --md-orange-500: #FF9800;
+    --md-orange-500-rgb: 255, 152, 0;
+    --md-orange-500-hsl: 54, 100%, 48%;
+
+    --md-orange-600: #FB8C00;
+    --md-orange-600-rgb: 251, 140, 0;
+    --md-orange-600-hsl: 54, 100%, 43%;
+
+    --md-orange-700: #F57C00;
+    --md-orange-700-rgb: 245, 124, 0;
+    --md-orange-700-hsl: 54, 100%, 41%;
+
+    --md-orange-800: #EF6C00;
+    --md-orange-800-rgb: 239, 108, 0;
+    --md-orange-800-hsl: 54, 100%, 37%;
+
+    --md-orange-900: #E65100;
+    --md-orange-900-rgb: 230, 81, 0;
+    --md-orange-900-hsl: 54, 100%, 30%;
+
+    --md-orange-a100: #FFD180;
+    --md-orange-a100-rgb: 255, 209, 128;
+    --md-orange-a100-hsl: 54, 100%, 73%;
+
+    --md-orange-a200: #FFAB40;
+    --md-orange-a200-rgb: 255, 171, 64;
+    --md-orange-a200-hsl: 54, 100%, 54%;
+
+    --md-orange-a400: #FF9100;
+    --md-orange-a400-rgb: 255, 145, 0;
+    --md-orange-a400-hsl: 54, 100%, 45%;
+
+    --md-orange-a700: #FF6E40;
+    --md-orange-a700-rgb: 255, 110, 64;
+    --md-orange-a700-hsl: 54, 100%, 43%;
+
+    /* Deep Orange */
+    --md-deep-orange-50: #FBE9E7;
+    --md-deep-orange-50-rgb: 251, 233, 231;
+    --md-deep-orange-50-hsl: 6, 100%, 96%;
+
+    --md-deep-orange-100: #FFCCBC;
+    --md-deep-orange-100-rgb: 255, 204, 188;
+    --md-deep-orange-100-hsl: 6, 100%, 90%;
+
+    --md-deep-orange-200: #FFAB91;
+    --md-deep-orange-200-rgb: 255, 171, 145;
+    --md-deep-orange-200-hsl: 6, 100%, 79%;
+
+    --md-deep-orange-300: #FF8A65;
+    --md-deep-orange-300-rgb: 255, 138, 101;
+    --md-deep-orange-300-hsl: 6, 100%, 70%;
+
+    --md-deep-orange-400: #FF7043;
+    --md-deep-orange-400-rgb: 255, 112, 67;
+    --md-deep-orange-400-hsl: 6, 100%, 61%;
+
+    --md-deep-orange-500: #FF5722;
+    --md-deep-orange-500-rgb: 255, 87, 34;
+    --md-deep-orange-500-hsl: 6, 100%, 48%;
+
+    --md-deep-orange-600: #F4511E;
+    --md-deep-orange-600-rgb: 244, 81, 30;
+    --md-deep-orange-600-hsl: 6, 100%, 43%;
+
+    --md-deep-orange-700: #E64A19;
+    --md-deep-orange-700-rgb: 230, 74, 25;
+    --md-deep-orange-700-hsl: 6, 100%, 41%;
+
+    --md-deep-orange-800: #D84315;
+    --md-deep-orange-800-rgb: 216, 67, 21;
+    --md-deep-orange-800-hsl: 6, 100%, 37%;
+
+    --md-deep-orange-900: #BF360C;
+    --md-deep-orange-900-rgb: 191, 54, 12;
+    --md-deep-orange-900-hsl: 6, 100%, 30%;
+
+    --md-deep-orange-a100: #FF9E80;
+    --md-deep-orange-a100-rgb: 255, 158, 128;
+    --md-deep-orange-a100-hsl: 6, 100%, 73%;
+
+    --md-deep-orange-a200: #FF6E40;
+    --md-deep-orange-a200-rgb: 255, 110, 64;
+    --md-deep-orange-a200-hsl: 6, 100%, 54%;
+
+    --md-deep-orange-a400: #FF3D00;
+    --md-deep-orange-a400-rgb: 255, 61, 0;
+    --md-deep-orange-a400-hsl: 6, 100%, 45%;
+
+    --md-deep-orange-a700: #DD2C00;
+    --md-deep-orange-a700-rgb: 221, 44, 0;
+    --md-deep-orange-a700-hsl: 6, 100%, 43%;
+
+    /* Brown */
+    --md-brown-50: #EFEBE9;
+    --md-brown-50-rgb: 239, 235, 233;
+    --md-brown-50-hsl: 0, 0%, 94%;
+
+    --md-brown-100: #D7CCC8;
+    --md-brown-100-rgb: 215, 204, 200;
+    --md-brown-100-hsl: 0, 0%, 84%;
+
+    --md-brown-200: #BCAAA4;
+    --md-brown-200-rgb: 188, 170, 164;
+    --md-brown-200-hsl: 0, 0%, 76%;
+
+    --md-brown-300: #A1887F;
+    --md-brown-300-rgb: 161, 136, 127;
+    --md-brown-300-hsl: 0, 0%, 65%;
+
+    --md-brown-400: #8D6E63;
+    --md-brown-400-rgb: 141, 110, 99;
+    --md-brown-400-hsl: 0, 0%, 55%;
+
+    --md-brown-500: #795548;
+    --md-brown-500-rgb: 121, 85, 72;
+    --md-brown-500-hsl: 0, 0%, 41%;
+
+    --md-brown-600: #6D4C41;
+    --md-brown-600-rgb: 109, 76, 65;
+    --md-brown-600-hsl: 0, 0%, 37%;
+
+    --md-brown-700: #5D4037;
+    --md-brown-700-rgb: 93, 64, 55;
+    --md-brown-700-hsl: 0, 0%, 30%;
+
+    --md-brown-800: #4E342E;
+    --md-brown-800-rgb: 78, 52, 46;
+    --md-brown-800-hsl: 0, 0%, 24%;
+
+    --md-brown-900: #3E2723;
+    --md-brown-900-rgb: 62, 39, 35;
+    --md-brown-900-hsl: 0, 0%, 20%;
+
+    /* Grey */
+    --md-grey-50: #FAFAFA;
+    --md-grey-50-rgb: 250, 250, 250;
+    --md-grey-50-hsl: 0, 0%, 98%;
+
+    --md-grey-100: #F5F5F5;
+    --md-grey-100-rgb: 245, 245, 245;
+    --md-grey-100-hsl: 0, 0%, 96%;
+
+    --md-grey-200: #EEEEEE;
+    --md-grey-200-rgb: 238, 238, 238;
+    --md-grey-200-hsl: 0, 0%, 93%;
+
+    --md-grey-300: #E0E0E0;
+    --md-grey-300-rgb: 224, 224, 224;
+    --md-grey-300-hsl: 0, 0%, 88%;
+
+    --md-grey-400: #BDBDBD;
+    --md-grey-400-rgb: 189, 189, 189;
+    --md-grey-400-hsl: 0, 0%, 74%;
+
+    --md-grey-500: #9E9E9E;
+    --md-grey-500-rgb: 158, 158, 158;
+    --md-grey-500-hsl: 0, 0%, 62%;
+
+    --md-grey-600: #757575;
+    --md-grey-600-rgb: 117, 117, 117;
+    --md-grey-600-hsl: 0, 0%, 46%;
+
+    --md-grey-700: #616161;
+    --md-grey-700-rgb: 97, 97, 97;
+    --md-grey-700-hsl: 0, 0%, 38%;
+
+    --md-grey-800: #424242;
+    --md-grey-800-rgb: 66, 66, 66;
+    --md-grey-800-hsl: 0, 0%, 26%;
+
+    --md-grey-900: #212121;
+    --md-grey-900-rgb: 33, 33, 33;
+    --md-grey-900-hsl: 0, 0%, 13%;
+
+    /* Blue Grey */
+    --md-blue-grey-50: #ECEFF1;
+    --md-blue-grey-50-rgb: 236, 239, 241;
+    --md-blue-grey-50-hsl: 210, 16%, 94%;
+
+    --md-blue-grey-100: #B0BEC5;
+    --md-blue-grey-100-rgb: 176, 190, 197;
+    --md-blue-grey-100-hsl: 210, 8%, 73%;
+
+    --md-blue-grey-200: #90A4AE;
+    --md-blue-grey-200-rgb: 144, 164, 174;
+    --md-blue-grey-200-hsl: 210, 8%, 64%;
+
+    --md-blue-grey-300: #78909C;
+    --md-blue-grey-300-rgb: 120, 144, 156;
+    --md-blue-grey-300-hsl: 210, 8%, 57%;
+
+    --md-blue-grey-400: #607D8B;
+    --md-blue-grey-400-rgb: 96, 125, 139;
+    --md-blue-grey-400-hsl: 210, 8%, 46%;
+
+    --md-blue-grey-500: #546E7A;
+    --md-blue-grey-500-rgb: 84, 110, 122;
+    --md-blue-grey-500-hsl: 210, 8%, 37%;
+
+    --md-blue-grey-600: #455A64;
+    --md-blue-grey-600-rgb: 69, 90, 100;
+    --md-blue-grey-600-hsl: 210, 8%, 27%;
+
+    --md-blue-grey-700: #37474F;
+    --md-blue-grey-700-rgb: 55, 71, 79;
+    --md-blue-grey-700-hsl: 210, 8%, 19%;
+
+    --md-blue-grey-800: #263238;
+    --md-blue-grey-800-rgb: 38, 50, 56;
+    --md-blue-grey-800-hsl: 210, 8%, 14%;
+
+    --md-blue-grey-900: #111B21;
+    --md-blue-grey-900-rgb: 17, 27, 33;
+    --md-blue-grey-900-hsl: 210, 16%, 8%;
+}
+
+:root {
+    /* Shades of Grey */
+    --md-grey-light: #D3D3D3;
+    --md-grey-light-rgb: 211, 211, 211;
+    --md-grey-light-hsl: 0, 0%, 83%;
+    --md-grey-dark: #A9A9A9;
+    --md-grey-dark-rgb: 169, 169, 169;
+    --md-grey-dark-hsl: 0, 0%, 66%;
+
+    --md-black: #000000;
+    --md-black-rgb: 0, 0, 0;
+    --md-black-hsl: 0, 0%, 0%;
+
+    --md-white: #FFFFFF;
+    --md-white-rgb: 255, 255, 255;
+    --md-white-hsl: 0, 0%, 100%;
+
+    /* Pastels */
+    --md-pastel-pink: #FFD1DC;
+    --md-pastel-pink-rgb: 255, 209, 220;
+    --md-pastel-pink-hsl: 350, 100%, 88%;
+    --md-pastel-blue: #A7D3E0;
+    --md-pastel-blue-rgb: 167, 211, 224;
+    --md-pastel-blue-hsl: 195, 52%, 81%;
+    --md-pastel-green: #A7E3D8;
+    --md-pastel-green-rgb: 167, 227, 216;
+    --md-pastel-green-hsl: 175, 57%, 81%;
+    --md-pastel-yellow: #FFEDBF;
+    --md-pastel-yellow-rgb: 255, 237, 191;
+    --md-pastel-yellow-hsl: 48, 100%, 85%;
+
+    /* Muted Colors */
+    --md-muted-red: #D4A4A1;
+    --md-muted-red-rgb: 212, 164, 161;
+    --md-muted-red-hsl: 0, 28%, 73%;
+    --md-muted-blue: #A4B6D4;
+    --md-muted-blue-rgb: 164, 182, 212;
+    --md-muted-blue-hsl: 210, 25%, 77%;
+    --md-muted-green: #A1D4A4;
+    --md-muted-green-rgb: 161, 212, 164;
+    --md-muted-green-hsl: 130, 28%, 73%;
+}
+
+:root {
+    --md-bootstrap-primary: #007bff;
+    --md-bootstrap-primary-rgb: 0, 123, 255;
+    --md-bootstrap-primary-hsl: 210, 100%, 50%;
+    --md-bootstrap-secondary: #6c757d;
+    --md-bootstrap-secondary-rgb: 108, 117, 125;
+    --md-bootstrap-secondary-hsl: 210, 13%, 47%;
+
+    /* Material Colors */
+    --md-primary: #6200ea;
+    --md-primary-rgb: 98, 0, 234;
+    --md-primary-hsl: 240, 100%, 46%;
+    --md-accent: #ff4081;
+    --md-accent-rgb: 255, 64, 129;
+    --md-accent-hsl: 340, 100%, 63%;
+
+    /* Tailwind Colors */
+    --md-tailwind-blue: #3b82f6;
+    --md-tailwind-blue-rgb: 59, 130, 246;
+    --md-tailwind-blue-hsl: 210, 90%, 60%;
+    --md-tailwind-green: #10b981;
+    --md-tailwind-green-rgb: 16, 185, 129;
+    --md-tailwind-green-hsl: 167, 88%, 40%;
+}
