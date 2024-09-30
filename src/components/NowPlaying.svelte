@@ -8,8 +8,7 @@
   <div class="flex items-center gap-1">
     {#each glazewm.allWorkspaces as workspace}
       {#each workspace.children as child}
-        <!-- if the child has prop state, it is a window -->
-        {#if "state" in child && child.processName.toLowerCase() === "spotify"}
+        {#if child.type == "window" && child.processName.toLowerCase() === "spotify"}
           {#if child.title.toLowerCase() === "spotify premium"}
             <i class="ti ti-music-off text-zb-spotify-paused"></i>
             nothing is playing
