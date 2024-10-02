@@ -21,7 +21,7 @@
         .some((name) => possibleAppNames.includes(name))
     );
 
-    return entry?.iconName ?? `ti-brand-${child.processName.toLowerCase()}`;
+    return entry?.iconName ?? "ti-background";
   };
 
   let { glazewm } : { glazewm: GlazeWmOutput}= $props()

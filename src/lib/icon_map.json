@@ -20,12 +20,28 @@
     "appNames": ["airmail", "olk"]
   },
   {
+    "iconName": "ti-brand-chrome",
+    "appNames": ["chrome"]
+  },
+  {
+    "iconName": "ti-brand-firefox",
+    "appNames": ["firefox"]
+  },
+  {
     "iconName": "ti-circle-letter-z",
     "appNames": ["zen"]
   },
   {
     "iconName": "msedge",
     "appNames": ["ti-brand-edge"]
+  },
+  {
+    "iconName": "ti-brand-discord",
+    "appNames": ["discord"]
+  },
+  {
+    "iconName": "ti-brand-spotify",
+    "appNames": ["spotify"]
   },
   {
     "iconName": "ti-spy",
