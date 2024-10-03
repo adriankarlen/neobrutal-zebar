@@ -20,6 +20,10 @@
     "appNames": ["airmail", "olk"]
   },
   {
+    "iconName": "ti-brand-arc",
+    "appNames": ["arc"]
+  },
+  {
     "iconName": "ti-brand-chrome",
     "appNames": ["chrome"]
   },
@@ -86,5 +90,9 @@
   {
     "iconName": "ti-palette",
     "appNames": ["mspaint"]
+  },
+  {
+    "iconName": "ti-brand-steam",
+    "appNames": ["steam"]
   }
 ]
