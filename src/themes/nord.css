@@ -1,68 +1,20 @@
 /* https://www.nordtheme.com/ */
 
 :root {
-    --nord0: #2e3440; /* Polar Night */
-    --nord0-rgb: 46, 52, 64; 
-    --nord0-hsl: 210, 20%, 20%; 
-  
-    --nord1: #3b4252; /* Polar Night */
-    --nord1-rgb: 59, 66, 82; 
-    --nord1-hsl: 210, 12%, 26%; 
-  
-    --nord2: #434c5e; /* Polar Night */
-    --nord2-rgb: 67, 76, 94; 
-    --nord2-hsl: 210, 14%, 34%; 
-  
-    --nord3: #4c566a; /* Polar Night */
-    --nord3-rgb: 76, 86, 106; 
-    --nord3-hsl: 210, 13%, 40%; 
-  
-    --nord4: #d8dee9; /* Snow Storm */
-    --nord4-rgb: 216, 222, 233; 
-    --nord4-hsl: 210, 36%, 91%; 
-  
-    --nord5: #e5e9f0; /* Snow Storm */
-    --nord5-rgb: 229, 233, 240; 
-    --nord5-hsl: 210, 25%, 94%; 
-  
-    --nord6: #eceff4; /* Snow Storm */
-    --nord6-rgb: 236, 239, 244; 
-    --nord6-hsl: 210, 21%, 96%; 
-  
-    --nord7: #8fbcbb; /* Frost */
-    --nord7-rgb: 143, 188, 187; 
-    --nord7-hsl: 180, 30%, 62%; 
-  
-    --nord8: #88c0d0; /* Frost */
-    --nord8-rgb: 136, 192, 208; 
-    --nord8-hsl: 192, 40%, 66%; 
-  
-    --nord9: #81a1c1; /* Frost */
-    --nord9-rgb: 129, 161, 193; 
-    --nord9-hsl: 210, 28%, 58%; 
-  
-    --nord10: #5e81ac; /* Frost */
-    --nord10-rgb: 94, 129, 172; 
-    --nord10-hsl: 210, 35%, 53%; 
-  
-    --nord11: #bf616a; /* Aurora */
-    --nord11-rgb: 191, 97, 106; 
-    --nord11-hsl: 358, 60%, 53%; 
-  
-    --nord12: #d08770; /* Aurora */
-    --nord12-rgb: 208, 135, 112; 
-    --nord12-hsl: 25, 50%, 66%; 
-  
-    --nord13: #ebcb8b; /* Aurora */
-    --nord13-rgb: 235, 203, 139; 
-    --nord13-hsl: 45, 81%, 70%; 
-  
-    --nord14: #a3be8c; /* Aurora */
-    --nord14-rgb: 163, 190, 140; 
-    --nord14-hsl: 104, 30%, 65%; 
-  
-    --nord15: #b48ead; /* Aurora */
-    --nord15-rgb: 180, 142, 173; 
-    --nord15-hsl: 322, 28%, 64%; 
-  }
-  
+  --nord0: 210 20% 20%;
+  --nord1: 210 12% 26%;
+  --nord2: 210 14% 34%;
+  --nord3: 210 13% 40%;
+  --nord4: 210 36% 91%;
+  --nord5: 210 25% 94%;
+  --nord6: 210 21% 96%;
+  --nord7: 180 30% 62%;
+  --nord8: 192 40% 66%;
+  --nord9: 210 28% 58%;
+  --nord10: 210 35% 53%;
+  --nord11: 358 60% 53%;
+  --nord12: 25 50% 66%;
+  --nord13: 45 81% 70%;
+  --nord14: 104 30% 65%;
+  --nord15: 322 28% 64%;
+}
