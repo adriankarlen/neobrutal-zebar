@@ -80,30 +80,30 @@ and Material. Below follows some examples.
 
 ```css
 /* colors */
---text: var(--rp-text-hsl);
---bg: var(--rp-overlay-hsl);
---border: var(--rp-highlight-low-hsl);
---shadow: var(--rp-highlight-low-hsl);
---icon: var(--rp-love-hsl);
---memory: var(--rp-iris-hsl);
---cpu: var(--rp-rose-hsl);
---cpu-high-usage: var(--rp-love-hsl);
---battery-good: var(--rp-pine-hsl);
---battery-mid: var(--rp-gold-hsl);
---battery-low: var(--rp-love-hsl);
---focused-process: var(--rp-text-hsl);
---process: var(--rp-muted-hsl);
---displayed: var(--rp-text-hsl);
---ws-1: var(--rp-gold-hsl);
---ws-2: var(--rp-love-hsl);
---ws-3: var(--rp-pine-hsl);
---ws-4: var(--rp-foam-hsl);
---ws-5: var(--rp-iris-hsl);
---tiling-direction: var(--rp-rose-hsl);
---not-playing: var(--rp-love-hsl);
---now-playing: var(--rp-pine-hsl);
---network: var(--rp-text-hsl);
---weather: var(--rp-text-hsl);
+--text: var(--rp-text);
+--bg: var(--rp-overlay);
+--border: var(--rp-highlight-low);
+--shadow: var(--rp-highlight-low);
+--icon: var(--rp-love);
+--memory: var(--rp-iris);
+--cpu: var(--rp-rose);
+--cpu-high-usage: var(--rp-love);
+--battery-good: var(--rp-pine);
+--battery-mid: var(--rp-gold);
+--battery-low: var(--rp-love);
+--focused-process: var(--rp-text);
+--process: var(--rp-muted);
+--displayed: var(--rp-text);
+--ws-1: var(--rp-gold);
+--ws-2: var(--rp-love);
+--ws-3: var(--rp-pine);
+--ws-4: var(--rp-foam);
+--ws-5: var(--rp-iris);
+--tiling-direction: var(--rp-rose);
+--not-playing: var(--rp-love);
+--now-playing: var(--rp-pine);
+--network: var(--rp-text);
+--weather: var(--rp-text);
 ```
 
 </details>
