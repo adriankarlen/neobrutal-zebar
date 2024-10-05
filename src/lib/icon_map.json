@@ -28,6 +28,7 @@
     "appNames": ["chrome"]
   },
   {
+
     "iconName": "ti-brand-firefox",
     "appNames": ["firefox"]
   },
@@ -36,8 +37,8 @@
     "appNames": ["zen"]
   },
   {
-    "iconName": "msedge",
-    "appNames": ["ti-brand-edge"]
+    "iconName": "ti-brand-edge",
+    "appNames": : ["msedge"]
   },
   {
     "iconName": "ti-brand-discord",
