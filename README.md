@@ -155,7 +155,7 @@ Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/do
 --weather: var(--ctp-mocha-text);
 ```
 
-##### src/components/RightGroup.svelte
+##### src/components/LeftGroup.svelte
 
 ```svelte
 <!-- replace this line -->
